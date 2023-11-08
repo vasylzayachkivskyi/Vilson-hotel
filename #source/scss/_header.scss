@@ -51,6 +51,7 @@
                     background-color: #9051FF;
                 }
             }
+
             &:hover {
                 >a:after {
                     width: 100%;
@@ -62,7 +63,8 @@
             position: relative;
             padding-right: 30px;
             cursor: pointer;
-            >a{
+
+            >a {
                 pointer-events: none;
             }
 
@@ -80,6 +82,7 @@
                 &:after {
                     transform: rotate(180deg);
                 }
+
                 >a:after {
                     width: 100%;
                 }
@@ -186,6 +189,19 @@
 
 .header__btn {
     margin: 0 0 0 auto;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -90px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #D9D9D9;
+        opacity: 0.25;
+        width: 1px;
+        height: 90px;
+    }
 
     a {
         color: #FFF;
@@ -199,5 +215,11 @@
         &:hover {
             color: #b99af0;
         }
+    }
+}
+
+.another {
+    .header__menu>ul .sub-menu:after {
+        background-image: url(../img/svg/arrow_down.svg);
     }
 }

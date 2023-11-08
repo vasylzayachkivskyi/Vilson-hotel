@@ -52,6 +52,9 @@ body {
     overflow-x: hidden;
     cursor: default;
     font-family: 'Montserrat Alternates', sans-serif;
+    &.another{
+        font-family: 'Fixel';
+    }
 }
 
 .main {
