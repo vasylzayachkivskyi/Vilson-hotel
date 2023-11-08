@@ -14,7 +14,7 @@ $(document).ready(function () {
     // heroscreen slider ------------ //
     var swiper = new Swiper(".heroscreen__slider", {
         slidesPerView: 1,
-        speed: 2200,
+        speed: 2600,
         loop: true,
         autoplay: {
             delay: 2600,

@@ -48,7 +48,7 @@
                     left: 0;
                     width: 0;
                     transition: .3s;
-                    background-color: #9051FF;
+                    background-color: #6C4B76;
                 }
             }
 
@@ -154,7 +154,7 @@
             transform: rotate(15deg);
         }
 
-        color: #b99af0;
+        color: #8f6b9b;
 
     }
 }
@@ -177,11 +177,11 @@
             transition: .3s;
 
             &:hover {
-                color: #b99af0;
+                color: #8f6b9b;
             }
 
             &.active {
-                color: #9051FF;
+                color: #6C4B76;
             }
         }
     }
@@ -213,7 +213,7 @@
         transition: .3s;
 
         &:hover {
-            color: #b99af0;
+            color: #8f6b9b;
         }
     }
 }
