@@ -14,10 +14,10 @@ $(document).ready(function () {
     // heroscreen slider ------------ //
     var swiper = new Swiper(".heroscreen__slider", {
         slidesPerView: 1,
-        speed: 1500,
+        speed: 2200,
         loop: true,
         autoplay: {
-            delay: 2400,
+            delay: 2600,
         },
         navigation: {
             nextEl: ".swiper-button-next",
