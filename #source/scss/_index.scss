@@ -265,12 +265,11 @@
 
 
 .heroscreen-center {
-    font-family: 'Prosto One', sans-serif;
     align-items: center;
 
     .heroscreen__title h1 {
+        font-family: 'Prosto One', sans-serif;
         color: #FFF;
-        font-family: Prosto One;
         font-size: 55px;
         font-style: normal;
         font-weight: 400;
@@ -279,7 +278,6 @@
         span {
             font-family: 'Scope One', serif;
             color: #93719E;
-            font-family: Scope One;
             font-size: 95px;
             font-style: normal;
             font-weight: 400;
@@ -290,6 +288,9 @@
     .heroscreen__description {
         max-width: 600px;
         text-align: center;
+        p{
+            font-weight: 300;
+        }
     }
 
     .violet-btn {
