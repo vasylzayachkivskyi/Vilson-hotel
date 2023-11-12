@@ -367,6 +367,7 @@
 @keyframes widthAnim {
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -375,5 +376,15 @@
         opacity: 0;
         z-index: -99;
         visibility: hidden;
+    }
+}
+
+//  ------------------------- //
+
+// ------------ adaptive ---------------- //
+@media (max-width:1399.8px) {
+    .heroscreen__title h1 {
+        font-size: 45px;
+        margin-bottom: 30px;
     }
 }
