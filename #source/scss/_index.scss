@@ -2,6 +2,7 @@
 
 .heroscreen {
     height: 100vh;
+    min-height: 750px;
     position: relative;
 
     &:before {
@@ -21,6 +22,7 @@
     position: relative;
     z-index: 2;
     height: 100vh;
+    min-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +112,7 @@
 
 .heroscreen__slider {
     height: 100vh;
+    min-height: 750px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -387,4 +390,44 @@
     .heroscreen:before {
         top: 86px;
     }
+}
+
+@media (max-width:991.8px) {
+    .heroscreen__title h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        span {
+            font-size: 70px;
+        }
+    }
+    .heroscreen__socials a {
+        width: 35px;
+        height: 35px;
+    }
+    .heroscreen__socials li+li {
+        margin-top: 10px;
+    }
+    .heroscreen__socials ul {
+        margin-top: 40px;
+        width: 35px;
+    }
+    .heroscreen__socials>p {
+        transform: rotate(-90deg) translate(50%,-62%);
+    }
+}
+
+@media (max-width:767.8px) {
+    .heroscreen__title h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+        span {
+            font-size: 50px;
+        }
+    }
+    .heroscreen__slider,
+    .heroscreen__inner,
+    .heroscreen {
+        min-height: 700px;
+    }
+
 }
