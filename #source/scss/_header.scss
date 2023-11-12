@@ -226,6 +226,11 @@
 
 // ---- adaptive ----- //
 
+@media (max-width:1599.8px) {
+    .header__btn:before {
+        left: -40px;
+    }
+}
 @media (max-width:1399.8px) {
 
     .header__left {
