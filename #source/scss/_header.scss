@@ -223,3 +223,44 @@
         background-image: url(../img/svg/arrow_down.svg);
     }
 }
+
+// ---- adaptive ----- //
+
+@media (max-width:1399.8px) {
+
+    .header__left {
+        padding-left: 50px;
+        padding-right: 45px;
+    }
+    .header__right {
+        padding-left: 45px;
+    }
+    .header__number a {
+        margin-right: 25px;
+    }
+
+    .header__btn:before {
+        left: -30px;
+    }
+}
+
+@media (max-width:1199.8px) {
+    .header__left {
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+    .header__right {
+        padding-left: 0px;
+    }
+    .header__number a {
+        font-size: 14px;
+    }
+    .header__btn:before {
+        left: -15px;
+        height: 86px;
+    }
+    .header {
+        height: 85px;
+    }
+
+}
