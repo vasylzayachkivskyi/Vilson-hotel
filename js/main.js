@@ -7,6 +7,13 @@ $(document).ready(function () {
         $(this).children('ul').slideToggle();
     });
 
+     // mobile menu ----------------- //
+     $('.burger-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.header__nav').toggleClass('active');
+    });
+
+
 
 
 
