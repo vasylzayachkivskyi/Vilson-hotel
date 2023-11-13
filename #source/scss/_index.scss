@@ -297,6 +297,7 @@
 
     &:hover {
         filter: brightness(120%);
+        color: #fff;
 
         img {
             transform: translateX(7px);
@@ -469,6 +470,10 @@
 }
 
 @media (max-width:575.8px) {
+    .header__mobile-phone img {
+        width: 40px;
+        height: 40px;
+    }
     .heroscreen__slider,
     .heroscreen__inner,
     .heroscreen {
@@ -499,10 +504,13 @@
 
 @media (max-width:460px) {
     .heroscreen__title h1 {
-        font-size: 22px;
+        font-size: 30px;
+        text-align: center;
 
         span {
-            font-size: 35px;
+            font-size: 32px;
+            display: block;
+            text-align: center;
         }
     }
 
