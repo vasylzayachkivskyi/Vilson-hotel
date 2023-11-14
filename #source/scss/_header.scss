@@ -5,6 +5,11 @@
     height: 91px;
     display: flex;
     align-items: center;
+    transition: .4s;
+    &.change-bg{
+        background: rgba(30, 30, 30, 0.71);
+        backdrop-filter: blur(17.160999298095703px);
+    }
 }
 
 .header__logo {
