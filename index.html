@@ -113,7 +113,7 @@
         </header>
 
         <main class="main">
-            <div class="preloader">
+            <!-- <div class="preloader">
                 <svg width="182" height="199" viewBox="0 0 182 199" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="preloader-text" clip-path="url(#clip0_300_2251)">
                     <path d="M22.4773 177.926L13.4659 153.908H7.64697L22.4773 190.449L37.3077 153.908H31.4884L22.4773 177.926Z" fill="black"/>
@@ -132,7 +132,7 @@
                     </clipPath>
                     </defs>
                 </svg>    
-            </div>
+            </div> -->
 
             <section class="heroscreen">
                 <div class="container">
@@ -340,12 +340,54 @@
                     </div>
                     <div class="reservation__inner">
                         <div class="reservation__form">
-                            <div class="reservation__form-datepicker"></div>
-                            <div class="reservation__form-datepicker"></div>
-                            <div class="reservation__form-guest"></div>
-                            <div class="reservation__form-btn"></div>
+                            <div class="reservation__form-datepicker">
+                                <label>
+                                    <div>
+                                        <span class="info-text">
+                                            Дата заїзду
+                                        </span>
+                                        <input type="text" readonly placeholder="Додати дати">
+                                    </div>
+                                    <img src="img/svg/datepicker_icon.svg" alt="calendar">
+                                </label>
+                            </div>
+                            <div class="reservation__form-datepicker">
+                                <label>
+                                    <div>
+                                        <span class="info-text">
+                                            Дата виїзду
+                                        </span>
+                                        <input type="text" readonly placeholder="Додати дати">
+                                    </div>
+                                    <img src="img/svg/datepicker_icon.svg" alt="calendar">
+                                </label>
+                            </div>
+                            <div class="reservation__form-guest">
+                                <label>
+                                    <div>
+                                        <span class="info-text">
+                                            Гостей
+                                        </span>
+                                        <input type="text" readonly placeholder="Додати гостей">
+                                    </div>
+                                    <img src="img/svg/guest_icon.svg" alt="calendar">
+                                </label>
+                            </div>
+                            <a href="#" class="reservation__form-btn">
+                                <span>
+                                    Знайти номер
+                                </span>
+                            </a>
+                        </div>
+                        <div class="reservation__rooms">
+                            <div class="reservation__card">
+
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="reservation__image">
+                    <img src="img/reservation__frame.png" alt="img">
                 </div>
             </section>
 
