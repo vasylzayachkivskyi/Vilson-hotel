@@ -66,5 +66,28 @@ $(document).ready(function () {
         },
     })
 
+    // card image slider ------------ //
+    $('.gallery-image').each(function () {
+        var swiper = new Swiper(this, {
+            loop: true,
+            navigation: {
+                nextEl: ".slider-next",
+                prevEl: ".slider-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+        var prevButton = $(this).find('.slider-prev');
+        var nextButton = $(this).find('.slider-next');
+        prevButton.on('click', function () {
+            swiper.slidePrev();
+        });
+        nextButton.on('click', function () {
+            swiper.slideNext();
+        });
+    });
+
 
 });
