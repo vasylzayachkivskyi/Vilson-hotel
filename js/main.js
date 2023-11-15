@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
 
-      // change header while scrolling --------------------------- //
-      $(window).scroll(function () {
+    // change header while scrolling --------------------------- //
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 10) {
             $('.header').addClass('change-bg');
         } else {
@@ -87,6 +87,27 @@ $(document).ready(function () {
         nextButton.on('click', function () {
             swiper.slideNext();
         });
+    });
+
+    // services slider ------------ //
+    var swiper = new Swiper(".services__slider", {
+        loop: true,
+        slidesPerView: 1,
+        speed: 2000,
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+            delay: 1000,
+        },
+    })
+
+    // FAQ accordeon
+    $('.faq__row-head').on('click', function() {
+        var parent = $(this).closest('.faq__row');
+        parent.toggleClass('active');
+        parent.find('.faq__row-body').slideToggle();
     });
 
 

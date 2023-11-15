@@ -7,7 +7,7 @@
     align-items: center;
     transition: .4s;
     &.change-bg{
-        background: rgba(30, 30, 30, 0.71);
+        background: rgba(30, 30, 30, 0.9);
         backdrop-filter: blur(17.160999298095703px);
     }
 }
@@ -306,39 +306,76 @@
         }
     }
 
+
     .burger-btn {
         display: block;
-        position: relative;
         z-index: 99;
+        width: 21px;
+        height: 19px;
+        position: relative;
         margin: 0 0 0 auto;
-        cursor: pointer;
+
+        &:before,
+        &:after,
+        span {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: #fff;
+            border-radius: 3px;
+            position: absolute;
+            right: 0;
+        }
+
+        &:before {
+            top: 3px;
+            width: 21px;
+        }
 
         span {
-            width: 36px;
-            height: 3px;
-            background: #f2f2f2;
-            display: block;
-            border-radius: 3px;
+            top: 10px;
+            width: 21px;
+        }
 
-            &+span {
-                margin-top: 8px;
-            }
+        &:after {
+            top: 17px;
+            width: 11px;
+        }
 
-            transition: .4s;
+
+        &:before {
+            transition: all 0.3s ease;
+        }
+
+        span {
+            transition: all 0.8s ease;
+        }
+
+        &:after {
+            transition: all 0.3s ease;
         }
 
         &.active {
-            span:nth-child(1) {
-                transform: rotate(45deg) translate(8px, 10px);
+            &:before {
+                top:10px;
+                transform: rotate(135deg);
+                transition: all 0.3s ease 0.2s;
+                background-color: #fff;
+                width: 25px;
             }
 
-            span:nth-child(2) {
+            span {
                 opacity: 0;
-                transform: translateX(20px);
+                transition: all 0.6s ease;
+                background-color: #fff;
             }
 
-            span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -8px);
+            &:after {
+                top: 10px;
+                width: 25px;
+                transform: rotate(-135deg);
+                transition: all 0.3s ease 0.2s;
+                background-color: #fff;
             }
         }
     }
@@ -447,6 +484,13 @@
 }
 
 @media (max-width: 767.8px) {
+    .header__logo a img {
+        width: 55px;
+    }
+    .header__mobile-phone img {
+        width: 40px;
+        height: 40px;
+    }
     .header__nav:after{
         width: 516px;
     }
