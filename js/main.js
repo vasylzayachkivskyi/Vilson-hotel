@@ -59,11 +59,16 @@ $(document).ready(function () {
     var swiper = new Swiper(".events__slider", {
         loop: true,
         slidesPerView: 'auto',
-        spaceBetween: 35,
+        spaceBetween: 20,
         speed: 7000,
         autoplay: {
             delay: 0,
         },
+        breakpoints: {
+            992: {
+                spaceBetween: 35
+            }
+        }
     })
 
     // card image slider ------------ //
@@ -96,7 +101,7 @@ $(document).ready(function () {
         speed: 2000,
         effect: 'fade',
         fadeEffect: {
-          crossFade: true
+            crossFade: true
         },
         autoplay: {
             delay: 1000,
@@ -104,7 +109,7 @@ $(document).ready(function () {
     })
 
     // FAQ accordeon
-    $('.faq__row-head').on('click', function() {
+    $('.faq__row-head').on('click', function () {
         var parent = $(this).closest('.faq__row');
         parent.toggleClass('active');
         parent.find('.faq__row-body').slideToggle();

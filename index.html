@@ -111,7 +111,7 @@
         </header>
 
         <main class="main">
-            <!-- <div class="preloader">
+            <div class="preloader">
                 <svg width="182" height="199" viewBox="0 0 182 199" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="preloader-text" clip-path="url(#clip0_300_2251)">
                         <path
@@ -140,7 +140,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </div> -->
+            </div> 
 
             <section class="heroscreen">
                 <div class="container">
@@ -646,14 +646,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
 
             <section class="faq">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10 col-12">
                             <div class="faq__title">
-                                <h2>
+                                <h2 class="section-title">
                                     питання
                                     <span>&</span>
                                     відповіді
@@ -757,7 +757,10 @@
                     </div>
                 </div>
                 <div class="faq__frame">
-                    <img src="img/svg/wood_frame.svg" alt="img">
+                    <picture>
+                        <source srcset="img/svg/heroframe_mobile.svg" media="(max-width: 576px)" />
+                        <img src="img/svg/wood_frame.svg" alt="img">
+                    </picture>
                 </div>
             </section>
 
@@ -884,7 +887,7 @@
                                         <img src="img/svg/location.svg" alt="img">
                                     </div>
                                     <span>
-                                        Івано-Франківська обл.c. Поляницяурочище Вишня, буд. 356
+                                        Івано-Франківська обл.c. Поляниця урочище Вишня, буд. 356
                                     </span>
                                 </a>
                             </div>
@@ -892,7 +895,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__socials padright">
+            <div class="footer__socials padright padleft">
                 <ul>
                     <li>
                         <a href="#">
@@ -917,7 +920,6 @@
                 </ul>
             </div>
         </footer>
-    </div>
 
 
     <script src="js/lib/jquery.js"></script>
