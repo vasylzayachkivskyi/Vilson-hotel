@@ -183,7 +183,7 @@ $(document).ready(function () {
     // Обробник події для кнопок плюс
     $('.plus').on('click', function () {
         const $counterField = $(this).siblings('.counter-field');
-        const maxGuests = 10;
+        const maxGuests = 7;
         let value = parseInt($counterField.text(), 10);
         if (value < maxGuests) {
             value++;
