@@ -10,6 +10,14 @@ $(document).ready(function () {
         }
     });
 
+    $(window).on('load', function () {
+        if ($(window).scrollTop() > 10) {
+            $('.header').addClass('change-bg');
+        } else {
+            $('.header').removeClass('change-bg');
+        }
+    });
+
     // submenu open ----------------- //
     $('.sub-menu').on('click', function () {
         $(this).toggleClass('active');

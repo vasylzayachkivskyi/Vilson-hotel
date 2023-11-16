@@ -1227,6 +1227,10 @@
         padding: 0px 25px;
     }
 
+    .reservation__form {
+        border-radius: 20px;
+    }
+
     .reservation__form-btn {
         margin: 30px auto 0;
         width: 60%;
@@ -1515,6 +1519,7 @@
     .reservation__rooms {
         gap: 30px;
     }
+
     .reservation {
         padding: 70px 0 120px;
     }
@@ -1528,7 +1533,7 @@
     }
 
     .services__slider .swiper-slide img {
-        height: 45vw;
+        height: 50vw;
     }
 
     .services__section .services__top .services__content p {
