@@ -343,7 +343,7 @@
 //  reservation section ---------------------------
 
 .reservation {
-    padding: 100px 0 450px;
+    padding: 100px 0 400px;
     position: relative;
 }
 
@@ -375,6 +375,11 @@
         margin-bottom: 4px;
     }
 }
+
+.reservation__form-guest {
+    margin-right: 20px;
+}
+
 
 .reservation__form-guest,
 .reservation__form-datepicker {
@@ -822,6 +827,10 @@
     &:nth-child(odd) {
         background: #222022;
 
+        .services__slider {
+            padding-left: 60px;
+        }
+
         .services__top-frame {
             right: 0;
             animation: woodAnim2 7s ease-in-out infinite;
@@ -839,8 +848,10 @@
 
     &:nth-child(even) {
         background: #FFF;
-        padding-right: 60px;
-        padding: 120px 0 130px;
+
+        .services__slider {
+            padding-right: 60px;
+        }
 
         .services__top-frame {
             animation: woodAnim 7s ease-in-out infinite;
@@ -849,6 +860,7 @@
 
         .services__top {
             flex-direction: row-reverse;
+            padding-right: 60px;
 
             h2,
             p {
@@ -871,6 +883,10 @@
                 opacity: 0.25;
             }
         }
+    }
+
+    &:last-child {
+        padding-bottom: 130px;
     }
 }
 
@@ -1024,6 +1040,46 @@
 
 // ------------ adaptive ---------------- //
 @media (max-width:1399.8px) {
+
+    .reservation__form-datepicker label,
+    .reservation__form-guest label {
+        width: 280px;
+        padding: 0px 30px;
+    }
+
+    .services__slider .swiper-slide img {
+        height: 480px;
+    }
+
+    .services__slider .swiper-slide img:nth-child(odd) {
+        width: calc(65% - 10px);
+    }
+
+    .services__slider .swiper-slide img:nth-child(even) {
+        width: calc(35% - 10px);
+    }
+
+    .services__section:nth-child(odd) .services__slider {
+        padding-left: 30px;
+    }
+
+    .services__section:nth-child(2n) .services__slider {
+        padding-right: 30px;
+    }
+
+
+    .services__section .services__top h2 {
+        max-width: 560px;
+    }
+
+    .services__section:nth-child(odd) .services__top {
+        padding-left: 30px;
+    }
+
+    .services__section:nth-child(even) .services__top {
+        padding-right: 30px;
+    }
+
     .faq__row-head span {
         width: 110px;
     }
@@ -1048,6 +1104,62 @@
 }
 
 @media (max-width:1199.8px) {
+    .reservation__card-image img {
+        height: 180px;
+    }
+
+    .reservation__card {
+        width: calc(33% - 14px);
+    }
+
+    .reservation__rooms {
+        gap: 25px;
+    }
+
+    .reservation__form-datepicker label,
+    .reservation__form-guest label {
+        width: 230px;
+        padding: 0px 25px;
+    }
+
+    .reservation {
+        padding: 100px 0 250px;
+    }
+
+    .services__slider .swiper-slide img {
+        height: 430px;
+    }
+
+    .services__slider .swiper-slide img:nth-child(odd) {
+        width: calc(65% - 7px);
+    }
+
+    .services__slider .swiper-slide img:nth-child(even) {
+        width: calc(35% - 7px);
+    }
+
+    .services__section .services__top {
+        padding-bottom: 50px;
+    }
+
+    .services__section {
+        padding: 90px 0 80px;
+    }
+
+    .services__section:nth-child(2n) .services__top {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .services__section .services__top h2 {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .services__section .services__top {
+        flex-wrap: wrap;
+    }
+
     .contact__map {
         height: 350px;
     }
@@ -1082,6 +1194,87 @@
 }
 
 @media (max-width:991.8px) {
+
+    .reservation__card {
+        width: calc(50% - 20px);
+    }
+
+    .reservation__rooms {
+        gap: 40px;
+    }
+
+    .reservation {
+        padding: 80px 0 200px;
+    }
+
+    .reservation__form-guest {
+        margin-right: 0;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .reservation__form-datepicker,
+    .reservation__form-guest {
+        position: relative;
+        width: 33%;
+    }
+
+    .reservation__form-datepicker label,
+    .reservation__form-guest label {
+        width: 100%;
+        padding: 0px 25px;
+    }
+
+    .reservation__form-btn {
+        margin: 30px auto 0;
+        width: 60%;
+    }
+
+    .reservation__form {
+        padding: 20px 30px;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .services__section {
+        padding: 80px 0 60px;
+    }
+
+    .services__section:last-child {
+        padding-bottom: 90px;
+    }
+
+    .services__slider .swiper-slide img {
+        height: 350px;
+    }
+
+    .services__slider .swiper-slide img:nth-child(odd) {
+        width: calc(65% - 5px);
+    }
+
+    .services__slider .swiper-slide img:nth-child(even) {
+        width: calc(35% - 5px);
+    }
+
+    .services__section:nth-child(odd) .services__top {
+        padding-left: 15px;
+    }
+
+    .services__section:nth-child(even) .services__top {
+        padding-right: 15px;
+    }
+
+    .services__section:nth-child(odd) .services__slider {
+        padding-left: 15px;
+    }
+
+    .services__section:nth-child(even) .services__slider {
+        padding-right: 15px;
+    }
+
     .faq__row-head {
         height: 120px;
 
@@ -1178,6 +1371,69 @@
 }
 
 @media (max-width:767.8px) {
+    .reservation__card-image img {
+        height: 160px;
+    }
+
+    .reservation__card {
+        width: calc(50% - 15px);
+    }
+
+    .reservation__rooms {
+        gap: 30px;
+    }
+
+    .reservation {
+        padding: 80px 0 160px;
+    }
+
+    .reservation__form-datepicker:after {
+        display: none;
+    }
+
+    .reservation__form-datepicker,
+    .reservation__form-guest {
+        width: 100%;
+    }
+
+    .reservation__form-datepicker label,
+    .reservation__form-guest label {
+        padding: 0px;
+    }
+
+    .reservation__form-datepicker {
+        margin-bottom: 20px;
+    }
+
+    .reservation__form-btn {
+        margin: 30px auto 0;
+        width: 100%;
+    }
+
+    .services__section .services__top-frame {
+        width: 50%;
+    }
+
+    .services__slider .swiper-slide img {
+        height: 40vw;
+    }
+
+    .services__section:nth-child(odd) .services__top {
+        padding-left: 0px;
+    }
+
+    .services__section:nth-child(even) .services__top {
+        padding-right: 0px;
+    }
+
+    .services__section:nth-child(odd) .services__slider {
+        padding-left: 0px;
+    }
+
+    .services__section:nth-child(even) .services__slider {
+        padding-right: 0px;
+    }
+
     .faq {
         padding: 100px 0 150px;
     }
@@ -1248,6 +1504,45 @@
 }
 
 @media (max-width:575.8px) {
+    .reservation__card-image img {
+        height: 45vw;
+    }
+
+    .reservation__card {
+        width: 100%;
+    }
+
+    .reservation__rooms {
+        gap: 30px;
+    }
+    .reservation {
+        padding: 70px 0 120px;
+    }
+
+    .reservation__title {
+        margin-bottom: 40px;
+    }
+
+    .reservation__image {
+        bottom: -100px;
+    }
+
+    .services__slider .swiper-slide img {
+        height: 45vw;
+    }
+
+    .services__section .services__top .services__content p {
+        margin-bottom: 30px;
+    }
+
+    .services__section .services__top {
+        padding-bottom: 35px;
+    }
+
+    .services__section {
+        padding: 60px 0 40px;
+    }
+
     .faq {
         padding: 70px 0 150px;
     }
@@ -1334,6 +1629,14 @@
 }
 
 @media (max-width:350px) {
+    .reservation {
+        padding: 40px 0 100px;
+    }
+
+    .reservation__image {
+        bottom: -50px;
+    }
+
     .faq {
         padding: 70px 0 80px;
     }
