@@ -8,6 +8,8 @@
     <title>Vilson hotel</title>
     <link rel="icon" type="image/x-icon" href="img/favikon.png">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/datepicker.min.css">
+    <link rel="stylesheet" href="css/lib/datepicker-bulma.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -111,7 +113,7 @@
         </header>
 
         <main class="main">
-            <div class="preloader">
+            <!-- <div class="preloader">
                 <svg width="182" height="199" viewBox="0 0 182 199" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="preloader-text" clip-path="url(#clip0_300_2251)">
                         <path
@@ -140,7 +142,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </div> 
+            </div>  -->
 
             <section class="heroscreen">
                 <div class="container">
@@ -351,13 +353,14 @@
                     </div>
                     <div class="reservation__inner">
                         <div class="reservation__form">
-                            <div class="reservation__form-datepicker">
+                            <div class="reservation__form-datepicker" id="datepicker">
                                 <label>
                                     <div>
                                         <span class="info-text">
                                             Дата заїзду
                                         </span>
-                                        <input type="text" readonly placeholder="Додати дати">
+                                        <input class="date-start datepicker-input" type="text" name="range-start"
+                                            autocomplete="off" readonly placeholder="Додати дати">
                                     </div>
                                     <img src="img/svg/datepicker_icon.svg" alt="calendar">
                                 </label>
@@ -379,10 +382,104 @@
                                         <span class="info-text">
                                             Гостей
                                         </span>
-                                        <input type="text" readonly placeholder="Додати гостей">
+                                        <input class="guest-field" type="text" readonly placeholder="Додати гостей">
                                     </div>
                                     <img src="img/svg/guest_icon.svg" alt="calendar">
                                 </label>
+                                <div class="guest-dropdown">
+                                    <div class="guest-dropdown__row">
+                                        <div class="guest-dropdown__tip">
+                                            <p>
+                                                Дорослі
+                                            </p>
+                                            <span>
+                                                Додати гостей
+                                            </span>
+                                        </div>
+                                        <div class="guest-dropdown__counter">
+                                            <div class="minus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <g clip-path="url(#clip0_300_2988)">
+                                                        <path d="M0.213867 8.66846H15.6424" stroke="white"
+                                                            stroke-width="1.71429" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_300_2988">
+                                                            <rect width="15.4286" height="15.4286" fill="white"
+                                                                transform="translate(0.213867 0.954224)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <p class="counter-field adult-counter">
+                                                0
+                                            </p>
+                                            <div class="plus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <g clip-path="url(#clip0_300_2993)">
+                                                        <path
+                                                            d="M8.89074 7.70592V0.954224H6.96556V7.70592H0.213867V9.6311H6.96556V16.3828H8.89074V9.6311H15.6424V7.70592H8.89074Z"
+                                                            fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_300_2993">
+                                                            <rect width="15.4286" height="15.4286" fill="white"
+                                                                transform="translate(0.213867 0.954224)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guest-dropdown__row">
+                                        <div class="guest-dropdown__tip">
+                                            <p>
+                                                Діти
+                                            </p>
+                                            <span>
+                                                Діти до 13 років
+                                            </span>
+                                        </div>
+                                        <div class="guest-dropdown__counter">
+                                            <div class="minus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <g clip-path="url(#clip0_300_2988)">
+                                                        <path d="M0.213867 8.66846H15.6424" stroke="white"
+                                                            stroke-width="1.71429" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_300_2988">
+                                                            <rect width="15.4286" height="15.4286" fill="white"
+                                                                transform="translate(0.213867 0.954224)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <p class="counter-field child-counter">
+                                                0
+                                            </p>
+                                            <div class="plus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <g clip-path="url(#clip0_300_2993)">
+                                                        <path
+                                                            d="M8.89074 7.70592V0.954224H6.96556V7.70592H0.213867V9.6311H6.96556V16.3828H8.89074V9.6311H15.6424V7.70592H8.89074Z"
+                                                            fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_300_2993">
+                                                            <rect width="15.4286" height="15.4286" fill="white"
+                                                                transform="translate(0.213867 0.954224)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <a href="#" class="reservation__form-btn">
                                 <span>
@@ -556,7 +653,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="reservation__image">
@@ -927,6 +1024,8 @@
 
         <script src="js/lib/jquery.js"></script>
         <script src="js/lib/swiper.js"></script>
+        <script src="js/lib/datepicker.js"></script>
+        <script src="js/lib/datepicker-locales.js"></script>
         <script src="js/main.js"></script>
 
 

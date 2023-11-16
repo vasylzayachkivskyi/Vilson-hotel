@@ -123,5 +123,84 @@ $(document).ready(function () {
         parent.find('.faq__row-body').slideToggle();
     });
 
+    //  --------------- FORM SCRIPTS --------------- //
+    //  -------------------------------------------- //
+
+    // guest dropdown ------------- 
+    $('.reservation__form-guest').on('click', function () {
+        $(this).find('.guest-dropdown').slideDown();
+    });
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.reservation__form-guest').length) {
+            $('.guest-dropdown').slideUp();
+        }
+    });
+
+    // guest counter ------------- 
+
+    // Функція для зміни лічильника та тексту в input
+    function updateCounter($counterField, value) {
+        $counterField.text(value);
+        updateGuestField(); // Додано виклик функції для оновлення .guest-field
+    }
+
+    // Функція для оновлення .guest-field
+    function updateGuestField() {
+        const adultValue = parseInt($('.adult-counter').text(), 10);
+        const childValue = parseInt($('.child-counter').text(), 10);
+
+        console.log(childValue + adultValue);
+        
+
+        const totalGuests = adultValue + childValue;
+        let guestsText;
+
+        if (totalGuests === 1) {
+            guestsText = 'Гість';
+        } else if (totalGuests >= 2 && totalGuests <= 4) {
+            guestsText = 'Гостя';
+        } else {
+            guestsText = 'Гостей';
+        }
+
+        $('.guest-field').val(`${totalGuests} ${guestsText}`);
+    }
+
+    // Обробник події для кнопок мінус
+    $('.minus').on('click', function () {
+        const $counterField = $(this).siblings('.counter-field');
+        let value = parseInt($counterField.text(), 10);
+        if (value > 0) {
+            value--;
+            updateCounter($counterField, value);
+        }
+        if (value <= 0) {
+            $(this).addClass('disabled');
+        }
+        $(this).siblings('.plus').removeClass('disabled');
+    });
+
+    // Обробник події для кнопок плюс
+    $('.plus').on('click', function () {
+        const $counterField = $(this).siblings('.counter-field');
+        const maxGuests = 10;
+        let value = parseInt($counterField.text(), 10);
+        if (value < maxGuests) {
+            value++;
+            updateCounter($counterField, value);
+        }
+        if (value >= maxGuests) {
+            $(this).addClass('disabled');
+        }
+        $(this).siblings('.minus').removeClass('disabled');
+    });
+
+
+
+    // filtr btn -------------
+    $('.reservation__form-btn').on('click', function (e) {
+        e.preventDefault();
+        $('.reservation').toggleClass('active');
+    });
 
 });
