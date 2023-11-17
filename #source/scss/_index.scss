@@ -373,6 +373,9 @@
         font-weight: 500;
         line-height: normal;
         margin-bottom: 4px;
+        padding: 0 40px;
+        width: 100%;
+        display: block;
     }
 }
 
@@ -484,11 +487,15 @@
 
     label {
         width: 322px;
-        padding: 0 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         cursor: pointer;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
+        }
 
         input {
             border: none;
@@ -499,7 +506,8 @@
             font-style: normal;
             line-height: normal;
             display: block;
-            padding: 0;
+            width: 100%;
+            padding: 0 40px;
 
             &::placeholder {
                 font-weight: 400;
@@ -1138,7 +1146,13 @@
     .reservation__form-datepicker label,
     .reservation__form-guest label {
         width: 280px;
-        padding: 0px 30px;
+        padding: 0px 30px 0 0;
+    }
+
+    .reservation__form-datepicker label input,
+    .reservation__form-guest label input,
+    .reservation__form .info-text {
+        padding-left: 30px;
     }
 
     .services__slider .swiper-slide img {
@@ -1199,8 +1213,9 @@
 
 @media (max-width:1199.8px) {
     .guest-dropdown {
-    width: 300px;
+        width: 300px;
     }
+
     .reservation__card-image img {
         height: 180px;
     }
@@ -1216,7 +1231,17 @@
     .reservation__form-datepicker label,
     .reservation__form-guest label {
         width: 230px;
-        padding: 0px 25px;
+    }
+
+    .reservation__form .info-text,
+    .reservation__form-datepicker label input,
+    .reservation__form-guest label input {
+        padding: 0 22px;
+    }
+
+    .reservation__form-datepicker label img,
+    .reservation__form-guest label img {
+        right: 22px;
     }
 
     .reservation {
@@ -1296,6 +1321,7 @@
         left: initial;
         right: 0px;
     }
+
     .reservation__card {
         width: calc(50% - 20px);
     }
@@ -1325,7 +1351,6 @@
     .reservation__form-datepicker label,
     .reservation__form-guest label {
         width: 100%;
-        padding: 0px 25px;
     }
 
     .reservation__form {
@@ -1480,6 +1505,7 @@
         width: 100%;
         right: 0;
     }
+
     .reservation__card-image img {
         height: 160px;
     }
@@ -1613,6 +1639,13 @@
 }
 
 @media (max-width:575.8px) {
+
+    .reservation__form .info-text,
+    .reservation__form-datepicker label input,
+    .reservation__form-guest label input {
+        padding: 0 10px;
+    }
+
     .reservation__card-image img {
         height: 45vw;
     }
@@ -1737,6 +1770,7 @@
     }
 
 }
+
 
 @media (max-width:350px) {
     .reservation {

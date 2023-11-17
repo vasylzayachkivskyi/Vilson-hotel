@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="img/favikon.png">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/datepicker.min.css">
-    <link rel="stylesheet" href="css/lib/datepicker-bulma.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -113,7 +112,7 @@
         </header>
 
         <main class="main">
-            <div class="preloader">
+            <!-- <div class="preloader">
                 <svg width="182" height="199" viewBox="0 0 182 199" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="preloader-text" clip-path="url(#clip0_300_2251)">
                         <path
@@ -142,7 +141,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </div>  
+            </div>   -->
 
             <section class="heroscreen">
                 <div class="container">
@@ -355,35 +354,29 @@
                         <div class="reservation__form">
                             <div class="reservation__form-datepicker" id="datepicker">
                                 <label>
-                                    <div>
                                         <span class="info-text">
                                             Дата заїзду
                                         </span>
-                                        <input class="date-start datepicker-input" type="text" name="range-start"
+                                        <input class="date-start" type="text"
                                             autocomplete="off" readonly placeholder="Додати дати">
-                                    </div>
                                     <img src="img/svg/datepicker_icon.svg" alt="calendar">
                                 </label>
                             </div>
                             <div class="reservation__form-datepicker">
                                 <label>
-                                    <div>
                                         <span class="info-text">
                                             Дата виїзду
                                         </span>
-                                        <input type="text" readonly placeholder="Додати дати">
-                                    </div>
+                                        <input class="date-end" type="text" readonly autocomplete="off" placeholder="Додати дати">
                                     <img src="img/svg/datepicker_icon.svg" alt="calendar">
                                 </label>
                             </div>
                             <div class="reservation__form-guest">
                                 <label>
-                                    <div>
                                         <span class="info-text">
                                             Гостей
                                         </span>
                                         <input class="guest-field" type="text" readonly placeholder="Додати гостей">
-                                    </div>
                                     <img src="img/svg/guest_icon.svg" alt="calendar">
                                 </label>
                                 <div class="guest-dropdown">
@@ -397,7 +390,7 @@
                                             </span>
                                         </div>
                                         <div class="guest-dropdown__counter">
-                                            <div class="minus">
+                                            <div class="minus disabled">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
                                                     viewBox="0 0 16 17" fill="none">
                                                     <g clip-path="url(#clip0_300_2988)">
@@ -443,7 +436,7 @@
                                             </span>
                                         </div>
                                         <div class="guest-dropdown__counter">
-                                            <div class="minus">
+                                            <div class="minus disabled">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
                                                     viewBox="0 0 16 17" fill="none">
                                                     <g clip-path="url(#clip0_300_2988)">
@@ -1024,8 +1017,7 @@
 
         <script src="js/lib/jquery.js"></script>
         <script src="js/lib/swiper.js"></script>
-        <script src="js/lib/datepicker.js"></script>
-        <script src="js/lib/datepicker-locales.js"></script>
+        <script src="js/lib/datepicker.min.js"></script>
         <script src="js/main.js"></script>
 
 

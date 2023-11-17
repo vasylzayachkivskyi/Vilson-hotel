@@ -150,7 +150,7 @@ $(document).ready(function () {
         const childValue = parseInt($('.child-counter').text(), 10);
 
         console.log(childValue + adultValue);
-        
+
 
         const totalGuests = adultValue + childValue;
         let guestsText;
@@ -202,5 +202,20 @@ $(document).ready(function () {
         e.preventDefault();
         $('.reservation').toggleClass('active');
     });
+
+    // календар -------------- // 
+    const args = {
+        id: 1,
+        startDay: 1,
+        customDays: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+        customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'],
+        formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString()
+            input.value = value
+        }
+    };
+
+    const start = datepicker('.date-start', args);
+    const end = datepicker('.date-end', args);
 
 });

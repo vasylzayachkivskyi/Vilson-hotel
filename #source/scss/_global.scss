@@ -79,6 +79,7 @@ body {
     font-weight: 400;
     line-height: 140%;
     text-transform: uppercase;
+
     span {
         color: #93719E;
         font-family: Scope One;
@@ -181,8 +182,177 @@ body {
     }
 }
 
-//  -------------------------------------- //
+//  -------------- *** ---------------- //
 
+
+
+//  --------- DATEPICKER ------------ //
+
+.qs-datepicker-container {
+    border-radius: 5px;
+    border: none;
+    background: #FFF;
+    padding: 34px;
+    width: 320px;
+    box-shadow: 0px 5.47899px 32.87395px 0px rgba(0, 0, 0, 0.20);
+    top: 65px !important;
+}
+
+.qs-controls {
+    background: transparent;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.qs-arrow.qs-left,
+.qs-arrow.qs-right {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+
+    &:after {
+        border: none;
+        width: 5px;
+        height: 9px;
+        background-image: url(../img/svg/Previous-Month.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.qs-arrow.qs-left:after {
+    background-image: url(../img/svg/Previous-Month.svg);
+}
+
+.qs-arrow.qs-right:after {
+    background-image: url(../img/svg/Next-Month.svg);
+}
+
+.qs-month-year {
+    color: var(--light-primary, #333);
+    text-align: center;
+    font-family: Fixel;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.qs-month-year:not(.qs-disabled-year-overlay):hover {
+    border-bottom: none;
+}
+
+.qs-arrow.qs-left {
+    right: 20px;
+}
+
+.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+    background: #dec5e673;
+}
+
+.qs-square {
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+
+    &.qs-day {
+        color: var(--light-primary, #333);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14.484px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &.qs-num {
+        color: #5A5D60;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14.484px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &.qs-disabled {
+            opacity: 1;
+        }
+
+        &.qs-active {
+            color: #fff;
+        }
+    }
+
+    &.qs-range-start {
+        background: #6C4B76;
+        color: #fff;
+
+        &:hover {
+            background: #6C4B76 !important;
+        }
+    }
+}
+
+.qs-active,
+.qs-range-start {
+    background: #6C4B76;
+}
+
+
+.qs-range-middle {
+    background: #BDAEC1;
+}
+
+.qs-range-end {
+    background: #99829F;
+    color: #fff !important;
+}
+
+.qs-range-start:not(.qs-range-6) {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 50% 0 0 50%;
+        background: #BDAEC1;
+    }
+}
+
+.qs-range-end:not(.qs-range-0),
+.qs-range-middle.qs-range-6 {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0 50% 50% 0;
+        background: #BDAEC1;
+    }
+}
+
+//  -------------- *** ---------------- //
+//  ----------------------------------- //
+
+
+//  ------------ADAPTIVE ----------- //
 
 @media (min-width: 1600px) {
 
@@ -199,7 +369,8 @@ body {
 @media (max-width: 1399.8px) {
     .section-title {
         font-size: 40px;
-        span{
+
+        span {
             font-size: 70px;
         }
     }
@@ -208,29 +379,48 @@ body {
 @media (max-width:991.8px) {
     .section-title {
         font-size: 32px;
-        span{
+
+        span {
             font-size: 50px;
         }
     }
 }
 
+
+@media (max-width:767.8px) {
+    .qs-datepicker-container {
+        left: 50%!important;
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width:575.8px) {
+    .qs-datepicker-container {
+        left: 50%!important;
+        transform: translateX(-50%);
+        width: 300px;
+        padding: 30px 25px;
+    }
     .section-title {
         font-size: 28px;
-        span{
+
+        span {
             font-size: 40px;
         }
     }
 }
 
+
 @media (max-width:350px) {
     .section-title {
         font-size: 24px;
-        span{
+
+        span {
             font-size: 36px;
         }
     }
+
     .violet-btn {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
