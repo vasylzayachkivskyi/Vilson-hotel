@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/datepicker.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -112,7 +113,8 @@
         </header>
 
         <main class="main">
-            <!-- <div class="preloader">
+
+            <div class="preloader">
                 <svg width="182" height="199" viewBox="0 0 182 199" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="preloader-text" clip-path="url(#clip0_300_2251)">
                         <path
@@ -141,7 +143,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </div>   -->
+            </div>
 
             <section class="heroscreen">
                 <div class="container">
@@ -666,9 +668,12 @@
                     <div class="services__topwrap">
                         <img src="img/svg/service_sect_frame_right.svg" alt="" class="services__top-frame">
                         <div class="container">
-                            <div class="services__top">
+                            <div class="services__top" >
                                 <div class="services__title">
-                                    <h2 class="section-title">
+                                    <h2 class="section-title"  
+                                    data-aos="fade-right"
+                                    data-aos-duration="700"
+                                    data-aos-easing="ease-in-sine">
                                         SPA-Симфонія:
                                         Гармонія Тіла і Душі
                                     </h2>
@@ -686,7 +691,11 @@
                         </div>
                     </div>
 
-                    <div class="services__slider swiper margleft">
+                    <div class="services__slider swiper margleft" 
+                        data-aos="fade-left"
+                        data-aos-duration="700"
+                        data-aos-delay="250"
+                        data-aos-easing="ease-in-sine">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="img/spa_service1.png" alt="image">
@@ -708,7 +717,10 @@
                         <img src="img/svg/service_sect_frame_left.svg" alt="" class="services__top-frame">
                         <div class="container">
                             <div class="services__top">
-                                <div class="services__title">
+                                <div class="services__title" 
+                                data-aos="fade-left"
+                                data-aos-duration="700"
+                                data-aos-easing="ease-in-sine">
                                     <h2 class="section-title">
                                         Ексклюзивний Смак в Vilson Ресторані
                                     </h2>
@@ -726,7 +738,11 @@
                         </div>
                     </div>
 
-                    <div class="services__slider swiper margright">
+                    <div class="services__slider swiper margright"
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    data-aos-delay="250"
+                    data-aos-easing="ease-in-sine">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="img/rest_service1.png" alt="image">
@@ -1014,9 +1030,9 @@
             </div>
         </footer>
 
-
         <script src="js/lib/jquery.js"></script>
         <script src="js/lib/swiper.js"></script>
+        <script src="js/lib/aos.js"></script>
         <script src="js/lib/datepicker.min.js"></script>
         <script src="js/main.js"></script>
 

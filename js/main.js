@@ -219,3 +219,6 @@ $(document).ready(function () {
     const end = datepicker('.date-end', args);
 
 });
+
+
+AOS.init();
