@@ -1,0 +1,112 @@
+.template {
+    position: relative;
+    background: #141314;
+}
+
+.template__inner {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10%;
+}
+
+.template__img {
+    margin-bottom: 55px;
+
+    img {
+        width: 100px;
+        background-size: cover;
+    }
+}
+
+.template__title {
+    margin-bottom: 30px;
+    max-width: 700px;
+
+    h1 {
+        color: #FFF;
+        font-family: Prosto One;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 2.8px;
+        text-align: center;
+    }
+}
+
+.template__subtitle {
+    max-width: 600px;
+    margin-bottom: 55px;
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: Fixel;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 1.26px;
+    }
+}
+
+
+
+.template__frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+}
+
+//  ---------------- ADAPTIVE ---------------- //
+
+@media (max-width:991.8px) {
+    .template__title h1 {
+        font-size: 36px;
+    }
+    .template__img img {
+        width: 80px;
+    }
+    .template__subtitle {
+        max-width: 500px;
+        p {
+            font-size: 16px;
+        }
+    }
+    .template__frame {
+        bottom: -25%;
+    }
+}
+
+@media (max-width:767.8px) {
+    .template__inner {
+        padding-bottom: 15%;
+    }
+    .template__frame {
+        bottom: -20%;
+    }
+    .template__title h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:575.8px) {
+    .template__frame {
+        bottom: -10%;
+    }
+}
+
+@media (max-width:400px) {
+    .template__frame {
+        bottom: 0%;
+    }
+}
