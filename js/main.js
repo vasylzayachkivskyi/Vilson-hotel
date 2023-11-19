@@ -203,10 +203,9 @@ $(document).ready(function () {
         $('.reservation').toggleClass('active');
     });
 
-    // календар -------------- // 
+    // datepicker -------------- // 
 
     if ($('#datepicker').length) {
-
         const args = {
             id: 1,
             startDay: 1,
@@ -217,11 +216,22 @@ $(document).ready(function () {
                 input.value = value
             }
         };
-
         const start = datepicker('.date-start', args);
         const end = datepicker('.date-end', args);
-
     }
+
+
+    // heroscreen slider ------------ //
+    var swiper = new Swiper(".apartaments__slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 700,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    })
 
 });
 
