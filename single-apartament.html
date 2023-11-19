@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="css/lib/datepicker.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/lib/aos.css">
+    <link rel="stylesheet" href="css/lib/fancyapps.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="pagewrapper">
-        <header class="header">
+        <header class="header custom">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-4">
@@ -117,25 +118,37 @@
             <section class="apartament">
                 <div class="container">
                     <div class="apartament__wrapper">
+                        <div class="apartament__btn-back">
+                            <a href="#" onclick="window.history.back();">
+                                Повернутись
+                            </a>
+                        </div>
                         <div class="apartament__gallery">
                             <div class="apartament__gallery-left">
-                                <a href="#">
+                                <a href="img/apartament_gallery1.png" data-fancybox="gallery">
                                     <img src="img/apartament_gallery1.png" alt="img">
                                 </a>
                             </div>
                             <div class="apartament__gallery-right">
-                                <a href="#">
+                                <a href="img/apartament_gallery2.png" data-fancybox="gallery">
                                     <img src="img/apartament_gallery2.png" alt="img">
                                 </a>
-                                <a href="#">
+                                <a href="img/apartament_gallery3.png" data-fancybox="gallery">
                                     <img src="img/apartament_gallery3.png" alt="img">
                                 </a>
-                                <a href="#">
+                                <a href="img/apartament_gallery4.png" data-fancybox="gallery">
                                     <img src="img/apartament_gallery4.png" alt="img">
                                 </a>
-                                <a href="#">
+                                <a href="img/apartament_gallery5.png" data-fancybox="gallery">
                                     <img src="img/apartament_gallery5.png" alt="img">
                                 </a>
+                            </div>
+                            <div class="apartament__gallery-frame">
+                                <a href="img/apartaments_slide2.png" data-fancybox="gallery"></a>
+                                <a href="img/apartaments_slide3.png" data-fancybox="gallery"></a>
+                                <a href="img/apartaments_slide4.png" data-fancybox="gallery"></a>
+                                <img src="img/svg/gallery-frame.svg" alt="gallery">
+                                <p>+5 Фото</p>
                             </div>
                         </div>
                     </div>
@@ -233,6 +246,7 @@
         <script src="js/lib/jquery.js"></script>
         <script src="js/lib/swiper.js"></script>
         <script src="js/lib/aos.js"></script>
+        <script src="js/lib/fancyapps.js"></script>
         <script src="js/lib/datepicker.min.js"></script>
         <script src="js/main.js"></script>
 

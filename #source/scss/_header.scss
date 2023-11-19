@@ -6,9 +6,15 @@
     display: flex;
     align-items: center;
     transition: .4s;
-    &.change-bg{
+
+    &.change-bg {
         background: rgba(30, 30, 30, 0.9);
         backdrop-filter: blur(17.160999298095703px);
+    }
+
+    &.custom {
+        background: rgba(#222022, .95);
+        backdrop-filter: blur(56.5px);
     }
 }
 
@@ -357,7 +363,7 @@
 
         &.active {
             &:before {
-                top:10px;
+                top: 10px;
                 transform: rotate(135deg);
                 transition: all 0.3s ease 0.2s;
                 background-color: #fff;
@@ -487,11 +493,13 @@
     .header__logo a img {
         width: 55px;
     }
+
     .header__mobile-phone img {
         width: 40px;
         height: 40px;
     }
-    .header__nav:after{
+
+    .header__nav:after {
         width: 516px;
     }
 
@@ -501,7 +509,7 @@
 }
 
 @media (max-width: 575.8px) {
-    .header__nav:after{
+    .header__nav:after {
         width: calc(100% - 24px);
     }
 }

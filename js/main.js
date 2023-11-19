@@ -233,6 +233,13 @@ $(document).ready(function () {
         }
     })
 
+    //  gallery ----------- //
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Carousel : {
+          infinite: true
+        }
+      }); 
+
 });
 
 
