@@ -1,8 +1,24 @@
+.heroapart h1 {
+    color: #FFF;
+    font-family: Prosto One;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+
+
+}
+
 .apartaments__section {
-    padding: 90px 0;
-    display: flex;
-    justify-content: space-between;
     position: relative;
+
+    .apartaments__section-inner {
+        padding: 90px 0;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
 
     .apartaments__frame {
         position: absolute;
@@ -18,8 +34,10 @@
     }
 
     &:nth-child(even) {
-        flex-direction: row-reverse;
-        background-color: #f4f4f4;
+        .apartaments__section-inner {
+            flex-direction: row-reverse;
+            background-color: #f4f4f4;
+        }
 
         .apartaments__frame {
             left: 0;
@@ -222,6 +240,30 @@
 
     ul {
         margin: 15px 0;
+        max-width: 500px;
+
+        li {
+            padding-left: 20px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 2px;
+                top: 10px;
+                width: 10px;
+                height: 1px;
+                background-color: #000;
+            }
+        }
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            list-style-type: decimal;
+        }
     }
 }
 
@@ -271,6 +313,27 @@
     }
 }
 
+.apartaments__descr-additional {
+    display: flex;
+    padding-top: 60px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        margin-right: 15px;
+    }
+
+    p {
+        color: #21262E;
+        font-family: Fixel;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
 //  ---------------- ADAPTIVE ---------------- //
 
 @media (max-width:1599.8px) {
@@ -304,7 +367,7 @@
         bottom: 640px;
     }
 
-    .apartaments__section {
+    .apartaments__section-inner {
         flex-wrap: wrap;
     }
 
@@ -333,7 +396,7 @@
 }
 
 @media (max-width:767.8px) {
-    .apartaments__section {
+    .apartaments__section-inner {
         padding: 60px 0;
     }
 
@@ -346,9 +409,6 @@
         max-width: 540px;
     }
 
-    .apartaments__section .apartaments__frame {
-        bottom: 610px;
-    }
 
     .apartaments__section .apartaments__frame {
         bottom: 510px;
@@ -389,7 +449,8 @@
         width: 35px;
         height: 35px;
         margin-right: 10px;
-        img{
+
+        img {
             width: 18px;
             height: 18px;
         }

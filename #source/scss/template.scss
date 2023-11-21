@@ -57,6 +57,34 @@
     }
 }
 
+.error__title {
+
+    h1 {
+        color: rgba(255, 255, 255, 0.90);
+        font-family: Prosto One;
+        font-size: 190px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 13.3px;
+    }
+}
+
+.error__subtitle {
+    margin-bottom: 40px;
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: Fixel;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 1.75px;
+    }
+}
+
 
 
 .template__frame {
@@ -70,30 +98,48 @@
 //  ---------------- ADAPTIVE ---------------- //
 
 @media (max-width:991.8px) {
+    .error__title h1 {
+        font-size: 160px;
+    }
+
     .template__title h1 {
         font-size: 36px;
     }
+
     .template__img img {
         width: 80px;
     }
+
     .template__subtitle {
         max-width: 500px;
+
         p {
             font-size: 16px;
         }
     }
+
     .template__frame {
         bottom: -25%;
     }
 }
 
 @media (max-width:767.8px) {
+    .error__title h1 {
+        font-size: 140px;
+    }
+
+    .error__subtitle p {
+        font-size: 20px;
+    }
+
     .template__inner {
         padding-bottom: 15%;
     }
+
     .template__frame {
         bottom: -20%;
     }
+
     .template__title h1 {
         font-size: 32px;
     }
@@ -103,10 +149,26 @@
     .template__frame {
         bottom: -10%;
     }
+
+    .error__subtitle p {
+        font-size: 18px;
+    }
+
+    .error__title h1 {
+        font-size: 130px;
+    }
 }
 
 @media (max-width:400px) {
     .template__frame {
         bottom: 0%;
+    }
+
+    .error__subtitle p {
+        font-size: 16px;
+    }
+
+    .error__title h1 {
+        font-size: 110px;
     }
 }

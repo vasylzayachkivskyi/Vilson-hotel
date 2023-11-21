@@ -220,8 +220,15 @@ $(document).ready(function () {
         const end = datepicker('.date-end', args);
     }
 
+      // apartaments section slider ------------ //
+      var swiper = new Swiper(".apartaments__section-slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 1000,
+        loop: true,
+    })
 
-    // heroscreen slider ------------ //
+    // apartaments slider ------------ //
     var swiper = new Swiper(".apartaments__slider", {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -234,11 +241,14 @@ $(document).ready(function () {
     })
 
     //  gallery ----------- //
-    Fancybox.bind('[data-fancybox="gallery"]', {
-        Carousel : {
-          infinite: true
-        }
-      }); 
+    if ($('.apartament__gallery').length) {
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Carousel: {
+                infinite: true
+            }
+        });
+    }
 
 });
 
