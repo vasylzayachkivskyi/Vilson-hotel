@@ -738,7 +738,7 @@
 }
 
 .apartament__form-box .additional-service {
-    padding: 17px 15px;
+    padding: 19px 15px;
 
     li {
         &+li {
@@ -881,8 +881,10 @@
         flex-wrap: wrap;
     }
 
+
     .apartament__info {
         width: 100%;
+        padding-right: 0;
     }
 
     .apartament__form {
@@ -893,6 +895,7 @@
     .apartament__form-box .reservation__form-guest {
         width: 100%;
     }
+
     .apartament__form {
         max-width: 100%;
     }
@@ -937,12 +940,159 @@
 
 @media (max-width:575.8px) {
     .apartament__gallery-left a {
-        height: 60vw;
+        height: 50vw;
     }
 
     .apartament__gallery-right a {
         height: 30vw;
     }
+
+    .apartament__info-wrap p {
+        font-size: 14px;
+
+        &+p {
+            margin-top: 20px;
+        }
+    }
+
+    .apartament__row-text p {
+        font-size: 14px;
+    }
+
+    .apartament__row-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+    }
+
+    .apartament__info-wrap>ul li p {
+        font-size: 14px;
+    }
+
+    .apartament__info-step {
+        position: relative;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+
+    .apartament__info-step .number {
+        top: -2px;
+        width: 26px;
+        height: 26px;
+        font-size: 14px
+    }
+
+    .apartament__info-step:before {
+        left: 13px;
+    }
+
+    .apartament__info-step>ul p {
+        font-size: 14px;
+    }
+
+    .apartament__info-step>ul li {
+        padding-left: 16px;
+    }
+
+    .apartament__info-step>ul li:before {
+        left: 3px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .apartament__info-step>p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .apartament__info-box {
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+    }
+
+    .apartament__info-title h2 {
+        font-size: 24px;
+    }
+
+    .apartament__wrapper {
+        padding: 100px 0px 60px;
+    }
 }
 
-@media (max-width:400px) {}
+@media (max-width:400px) {
+    .apartament__info-map iframe {
+        height: 200px;
+    }
+
+    .apartament__gallery {
+        margin-bottom: 45px;
+    }
+
+    .apartament__form-box {
+        .datepicker p {
+            font-size: 14px;
+        }
+
+        .datepicker span {
+            font-size: 12px;
+        }
+    }
+
+    .apartament__form-box .reservation__form-guest span {
+        font-size: 12px;
+    }
+
+    .apartament__form-box .reservation__form-guest input {
+        font-size: 14px;
+    }
+
+    .apartament__form-box .inputfield label span {
+        font-size: 12px;
+    }
+
+    .apartament__form-row p {
+        font-size: 14px;
+    }
+
+    .apartament__form-row span {
+        font-size: 14px;
+    }
+
+    .apartament__form-box .additional-service li p {
+        font-size: 14px;
+    }
+
+    .apartament__form-row .row-right input+span:after {
+        width: 22px;
+        height: 22px;
+        margin-left: 10px;
+    }
+
+    .apartament__form-row img {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+    }
+
+    .apartament__form {
+        padding: 20px 10px;
+    }
+
+    .apartament__form-box .additional-service .service-checkbox input+span:after {
+        width: 22px;
+        height: 22px;
+    }
+
+    .apartament__form-calculate li p {
+        font-size: 14px;
+    }
+
+    .apartament__form-calculate li.total {
+        padding-top: 18px;
+        margin-bottom: 5px;
+    }
+
+    .apartament__form-calculate li.total p {
+        font-size: 15px;
+    }
+}
