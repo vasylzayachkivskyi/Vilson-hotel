@@ -16,6 +16,19 @@
     //     opacity: 0.25;
     //     background-color: #D9D9D9;
     // }
+    &.heroapart {
+        height: 716px;
+        min-height: auto;
+
+        .heroscreen__inner {
+            height: 716px;
+            min-height: auto;
+        }
+        .heroscreen__slider {
+            height: 716px;
+            min-height: auto;
+        }
+    }
 }
 
 .heroscreen__inner {
@@ -1323,6 +1336,7 @@
         left: initial;
         right: 0px;
     }
+
     .heroapart .heroscreen__title h1 {
         font-size: 35px;
     }
@@ -1781,6 +1795,7 @@
     .heroapart .heroscreen__title h1 {
         font-size: 30px;
     }
+
     .reservation {
         padding: 40px 0 100px;
     }
