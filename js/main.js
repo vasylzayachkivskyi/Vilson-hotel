@@ -224,7 +224,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".apartaments__section-slider", {
         slidesPerView: 1,
         spaceBetween: 10,
-        speed: 1000,
+        speed: 1500,
         loop: true,
         autoplay: {
             delay: 1000,
