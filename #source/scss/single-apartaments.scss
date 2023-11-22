@@ -23,7 +23,7 @@
         font-family: Fixel;
         font-size: 14.934px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 6 00;
         line-height: 110%;
         padding-left: 30px;
         position: relative;
@@ -924,6 +924,9 @@
 }
 
 @media (max-width:767.8px) {
+    .apartament .apartament-frame {
+        width: 100%;
+    }
     .apartament__gallery {
         flex-wrap: wrap;
     }
