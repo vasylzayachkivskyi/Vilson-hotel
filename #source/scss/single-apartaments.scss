@@ -177,21 +177,14 @@
     }
 }
 
-.apartament__row-icon {
+.apartament__row-icon img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(#C4C7C8, .5);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-
-    img {
-        width: 19px;
-        height: 19px;
-        background-size: cover;
-    }
 }
 
 .apartament__row-text {
@@ -457,6 +450,9 @@
     position: relative;
     z-index: 1;
     background-color: #fff;
+    .guest-dropdown {
+        top: calc(100% + 2px);
+    }
 
     >h4 {
         color: #222;
