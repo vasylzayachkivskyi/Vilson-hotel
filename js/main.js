@@ -220,16 +220,6 @@ $(document).ready(function () {
         const end = datepicker('.date-end', args);
     }
 
-    // apartaments section slider ------------ //
-    var swiper = new Swiper(".apartaments__section-slider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 1500,
-        loop: true,
-        autoplay: {
-            delay: 1000,
-        },
-    })
 
     // apartaments slider ------------ //
     var swiper = new Swiper(".apartaments__slider", {

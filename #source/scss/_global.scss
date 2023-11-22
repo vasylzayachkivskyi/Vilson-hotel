@@ -367,7 +367,7 @@ body {
     }
 }
 
-@media (max-width: 1399.8px) {
+@media (max-width: 1599.8px) {
     .section-title {
         font-size: 40px;
 
@@ -393,6 +393,13 @@ body {
         left: 50%!important;
         transform: translateX(-50%);
     }
+    .section-title {
+        font-size: 28px;
+
+        span {
+            font-size: 40px;
+        }
+    }
 }
 
 @media (max-width:575.8px) {
@@ -401,13 +408,6 @@ body {
         transform: translateX(-50%);
         width: 300px;
         padding: 30px 25px;
-    }
-    .section-title {
-        font-size: 28px;
-
-        span {
-            font-size: 40px;
-        }
     }
 }
 
