@@ -226,6 +226,9 @@ $(document).ready(function () {
         spaceBetween: 10,
         speed: 1000,
         loop: true,
+        autoplay: {
+            delay: 1000,
+        },
     })
 
     // apartaments slider ------------ //
