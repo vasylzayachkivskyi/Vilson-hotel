@@ -7,11 +7,13 @@
     line-height: 140%;
     text-transform: uppercase;
 }
-.heroapart .heroscreen__description{
-    p{
+
+.heroapart .heroscreen__description {
+    p {
         color: rgba(255, 255, 255, 0.75);
     }
-    span{
+
+    span {
         display: block;
         color: #FFF;
     }
@@ -106,7 +108,7 @@
     }
 }
 
-.apartaments__row-icon img{
+.apartaments__row-icon img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -135,6 +137,10 @@
     height: 388px;
     overflow: auto;
     margin-bottom: 39px;
+
+    &.small {
+        height: 329px;
+    }
 
     &::-webkit-scrollbar {
         width: 14px;
@@ -361,11 +367,18 @@
         margin-bottom: 30px;
     }
 
+    .apartaments__descr.small {
+        height: 230px;
+    }
+
 }
 
 @media (max-width:1199.8px) {
     .apartaments__section .apartaments__frame {
         bottom: 640px;
+    }
+    .apartaments__descr.small {
+        height: 324px;
     }
 
     .apartaments__section-inner {
