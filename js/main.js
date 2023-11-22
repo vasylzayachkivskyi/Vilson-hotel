@@ -220,8 +220,8 @@ $(document).ready(function () {
         const end = datepicker('.date-end', args);
     }
 
-      // apartaments section slider ------------ //
-      var swiper = new Swiper(".apartaments__section-slider", {
+    // apartaments section slider ------------ //
+    var swiper = new Swiper(".apartaments__section-slider", {
         slidesPerView: 1,
         spaceBetween: 10,
         speed: 1000,
@@ -249,6 +249,29 @@ $(document).ready(function () {
             }
         });
     }
+
+    // more/less info box ---- //
+
+    $('.more-btn').on('click', function () {
+        var $this = $(this);
+        var $infoWrap = $this.siblings('.apartament__info-wrap');
+    
+        // Отримати поточну висоту елемента
+        var currentHeight = $infoWrap.height();
+    
+        // Встановити нову висоту або скинути до значення "auto"
+        var newHeight = (currentHeight === 150) ? $infoWrap.get(0).scrollHeight : 150;
+    
+        // Використовувати animate() для плавного змінення висоти
+        $infoWrap.animate({
+            height: newHeight
+        }, 500);
+    
+        // Додати або видалити клас 'active' для зміни стилів кнопки
+        $this.toggleClass('active');
+    });
+
+
 
 });
 
