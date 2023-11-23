@@ -150,7 +150,7 @@ $(document).ready(function () {
         updateGuestField(); // Додано виклик функції для оновлення .guest-field
     }
 
-    // Функція для оновлення .guest-field
+    // Функція для оновлення guest-field
     function updateGuestField() {
         const adultValue = parseInt($('.adult-counter').text(), 10);
         const childValue = parseInt($('.child-counter').text(), 10);
@@ -254,32 +254,35 @@ $(document).ready(function () {
     $('.more-btn').on('click', function () {
         var $this = $(this);
         var $infoWrap = $this.siblings('.apartament__info-wrap');
-    
+
         // Отримати поточну висоту елемента
         var currentHeight = $infoWrap.height();
-    
+
         // Встановити нову висоту або скинути до значення "auto"
         var newHeight = (currentHeight === 150) ? $infoWrap.get(0).scrollHeight : 150;
-    
+
         // Використовувати animate() для плавного змінення висоти
         $infoWrap.animate({
             height: newHeight
         }, 500);
-    
+
         // Додати або видалити клас 'active' для зміни стилів кнопки
         $this.toggleClass('active');
     });
 
 
     // booking form scroll --------------------------- //
-    $(window).scroll(function () {
-        var bookingFormOffset = $('#booking-form').offset().top;
-        if ($(this).scrollTop() >= bookingFormOffset - 200) {
-            $('.apartament__widget').addClass('hide');
-        } else {
-            $('.apartament__widget').removeClass('hide');
-        }
-    });
+    if ($('#booking-form').length) {
+        $(window).scroll(function () {
+            var bookingFormOffset = $('#booking-form').offset().top;
+            if ($(this).scrollTop() >= bookingFormOffset - 200) {
+                $('.apartament__widget').addClass('hide');
+            } else {
+                $('.apartament__widget').removeClass('hide');
+            }
+        });
+    }
+
 
     // scroll to anchor ------------- //
     $(".scrollto").on("click", "a", function (event) {
