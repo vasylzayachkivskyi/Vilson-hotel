@@ -10,12 +10,12 @@
 
 .heroapart .heroscreen__description {
     p {
-        color: rgba(255, 255, 255, 0.75);
+        color: #FFF;
     }
 
     span {
         display: block;
-        color: #FFF;
+        color: rgba(255, 255, 255, 0.75);
     }
 }
 
@@ -377,6 +377,7 @@
     .apartaments__section .apartaments__frame {
         bottom: 640px;
     }
+
     .apartaments__descr.small {
         height: 324px;
     }

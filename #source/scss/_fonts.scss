@@ -5,6 +5,17 @@
 // font-family: 'Scope One', serif;
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Montserrat Alternates', sans-serif;
+// font-family: Fixel Display;
+// font-family: Fixel;
+
+// @font-face {
+//     font-family: 'Fixel';
+//     src: local('FixelVariable'), local('Fixel-Variable'),
+//         url('../fonts/FixelVariable.ttf') format('truetype');
+// }
+
+
+
 
 @font-face {
     font-family: 'Fixel';
@@ -30,6 +41,86 @@
         url('../fonts/FixelText-Medium.woff2') format('woff2'),
         url('../fonts/FixelText-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel';
+    src: local('FixelText SemiBold'), local('FixelText-SemiBold'),
+        url('../fonts/FixelText-SemiBold.woff2') format('woff2'),
+        url('../fonts/FixelText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel';
+    src: local('FixelText SemiBold'), local('FixelText-Bold'),
+        url('../fonts/FixelText-Bold.woff2') format('woff2'),
+        url('../fonts/FixelText-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel';
+    src: local('FixelText ExtraBold'), local('FixelText-ExtraBold'),
+        url('../fonts/FixelText-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FixelText-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay Light'), local('FixelDisplay-Light'),
+        url('../fonts/FixelDisplay-Light.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay Regular'), local('FixelDisplay-Regular'),
+        url('../fonts/FixelDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay Medium'), local('FixelText-Medium'),
+        url('../fonts/FixelDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay SemiBold'), local('FixelText-SemiBold'),
+        url('../fonts/FixelDisplay-SemiBold.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay SemiBold'), local('FixelText-Bold'),
+        url('../fonts/FixelDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fixel Display';
+    src: local('FixelDisplay ExtraBold'), local('FixelText-ExtraBold'),
+        url('../fonts/FixelDisplay-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FixelDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
 }
 

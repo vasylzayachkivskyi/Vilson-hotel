@@ -51,12 +51,7 @@ body {
     position: relative;
     overflow-x: hidden;
     cursor: default;
-    font-family: 'Montserrat Alternates', sans-serif;
-
-    &.another {
-        font-family: 'Fixel';
-        font-weight: 300;
-    }
+    font-family: Fixel;
 }
 
 .main {
@@ -90,8 +85,9 @@ body {
     }
 }
 
-// ---------------- PRELOADER --------------- //
 
+
+// ---------------- PRELOADER --------------- //
 .preloader {
     width: 100%;
     height: 100vh;
@@ -182,13 +178,13 @@ body {
         }
     }
 }
-
 //  -------------- *** ---------------- //
 
 
 
-//  --------- DATEPICKER ------------ //
 
+
+//  --------- DATEPICKER ------------ //
 .qs-datepicker-container {
     border-radius: 5px;
     border: none;
@@ -348,9 +344,11 @@ body {
         background: #BDAEC1;
     }
 }
-
 //  -------------- *** ---------------- //
 //  ----------------------------------- //
+
+
+
 
 
 //  ------------ADAPTIVE ----------- //
