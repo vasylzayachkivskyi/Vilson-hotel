@@ -275,9 +275,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var bookingFormOffset = $('#booking-form').offset().top;
         if ($(this).scrollTop() >= bookingFormOffset - 200) {
-            $('.apartament__widget').fadeOut('slow');
+            $('.apartament__widget').addClass('hide');
         } else {
-            $('.apartament__widget').fadeIn('slow');
+            $('.apartament__widget').removeClass('hide');
         }
     });
 
@@ -286,7 +286,7 @@ $(document).ready(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top - 100 }, 1000);
+        $('body,html').animate({ scrollTop: top - 100 }, 0);
     });
 
 

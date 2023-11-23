@@ -941,6 +941,7 @@
         width: calc(50% - 4px);
         height: 150px;
     }
+
     .apartament__widget {
         position: fixed;
         z-index: 5;
@@ -955,6 +956,14 @@
         filter: drop-shadow(0px 1px 22px rgba(0, 0, 0, 0.09));
         border-radius: 8px 8px 0 0;
         border: 1px solid #E0DBE5;
+        transition: .7s;
+
+        &.hide {
+            opacity: 0;
+            transform: translateY(10px);
+            visibility: hidden;
+            z-index: -2;
+        }
     }
 
     .apartament__widget-info {
