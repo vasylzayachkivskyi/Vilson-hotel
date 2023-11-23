@@ -177,7 +177,7 @@
     }
 }
 
-.apartament__row-icon img{
+.apartament__row-icon img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -410,6 +410,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
+
     >h3 {
         color: var(--Dune, #373534);
         font-family: Prosto One;
@@ -450,6 +451,7 @@
     position: relative;
     z-index: 1;
     background-color: #fff;
+
     .guest-dropdown {
         top: calc(100% + 2px);
     }
@@ -547,13 +549,15 @@
         margin-bottom: 5px;
     }
 
-    p {
+    input {
         color: var(--Mulled-Vine, #6C4B76);
         font-family: Fixel;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        width: 100%;
+        border: none;
     }
 }
 
@@ -792,7 +796,7 @@
     }
 }
 
-.apartament__mobile-map{
+.apartament__mobile-map {
     display: none;
 }
 
@@ -881,12 +885,14 @@
 }
 
 @media (max-width:991.8px) {
-    .apartament__info-map{
+    .apartament__info-map {
         display: none;
     }
-    .apartament__mobile-map{
+
+    .apartament__mobile-map {
         display: block;
     }
+
     .apartament__inner {
         flex-wrap: wrap;
     }
@@ -937,6 +943,7 @@
     .apartament .apartament-frame {
         width: 100%;
     }
+
     .apartament__gallery {
         flex-wrap: wrap;
     }
