@@ -18,10 +18,16 @@ $(document).ready(function () {
         }
     });
 
-    // submenu open ----------------- //
+    // submenu open/close ----------------- //
     $('.sub-menu').on('click', function () {
         $(this).toggleClass('active');
         $(this).children('ul').slideToggle();
+    });
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.sub-menu').length) {
+            $('.sub-menu ul').slideUp();
+            $('.sub-menu').removeClass('active');
+        }
     });
 
     // mobile menu ----------------- //
@@ -264,6 +270,24 @@ $(document).ready(function () {
         $this.toggleClass('active');
     });
 
+
+    // booking form scroll --------------------------- //
+    $(window).scroll(function () {
+        var bookingFormOffset = $('#booking-form').offset().top;
+        if ($(this).scrollTop() >= bookingFormOffset - 200) {
+            $('.apartament__widget').fadeOut('slow');
+        } else {
+            $('.apartament__widget').fadeIn('slow');
+        }
+    });
+
+    // scroll to anchor ------------- //
+    $(".scrollto").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top - 100 }, 1000);
+    });
 
 
 });

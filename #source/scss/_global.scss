@@ -52,6 +52,7 @@ body {
     overflow-x: hidden;
     cursor: default;
     font-family: Fixel;
+    font-weight: 400;
 }
 
 .main {
@@ -63,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .section-title {
