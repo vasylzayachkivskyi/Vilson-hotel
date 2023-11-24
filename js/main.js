@@ -2,16 +2,9 @@
 $(document).ready(function () {
 
     // change header while scrolling --------------------------- //
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 10) {
-            $('.header').addClass('change-bg');
-        } else {
-            $('.header').removeClass('change-bg');
-        }
-    });
 
-    $(window).on('load', function () {
-        if ($(window).scrollTop() > 10) {
+    $(window).on('scroll load', function () {
+        if ($(this).scrollTop() > 10) {
             $('.header').addClass('change-bg');
         } else {
             $('.header').removeClass('change-bg');
