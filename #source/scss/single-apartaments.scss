@@ -973,7 +973,7 @@
         p {
             color: #222;
             font-family: Fixel Display;
-            font-size: 16px;
+            font-size: 23px;
             font-style: normal;
             font-weight: 600;
             line-height: 160%;
@@ -983,16 +983,38 @@
         span {
             color: #222;
             font-family: Fixel Display;
-            font-size: 15px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 133%;
         }
     }
 
+    .apartament__widget-btn {
+        a {
+            height: 45px;
+            padding: 16px 25px 14px;
+            font-size: 13px;
+            width: 180px;
+        }
+    }
+
 }
 
 @media (max-width:767.8px) {
+    .apartament__widget-info {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+    }
+
 
     .apartament .apartament-frame {
         width: 100%;
