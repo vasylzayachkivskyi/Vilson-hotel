@@ -302,7 +302,7 @@
     padding: 20px;
 
     h3 {
-        font-family: Fixel Display;
+        font-family: Fixel Display Display;
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
@@ -312,7 +312,7 @@
 
     span {
         color: #6C4B76;
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -382,7 +382,7 @@
 
     .info-text {
         color: var(--Shade-02, #222);
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -426,7 +426,7 @@
 .guest-dropdown__tip {
     p {
         color: var(--Shade-02, #222);
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 17px;
         font-style: normal;
         font-weight: 500;
@@ -436,7 +436,7 @@
 
     span {
         color: var(--Neutral-07, #717171);
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -473,7 +473,7 @@
 
 .counter-field {
     color: var(--Shade-02, #222);
-    font-family: Fixel;
+    font-family: Fixel Display;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -514,7 +514,7 @@
 
         input {
             border: none;
-            font-family: Fixel;
+            font-family: Fixel Display;
             font-weight: 400;
             color: var(--Neutral-07, #717171);
             font-size: 14px;
@@ -543,7 +543,7 @@
     border-radius: 30px;
     background: var(--Mulled-Vine, #6C4B76);
     color: #FFF;
-    font-family: Fixel;
+    font-family: Fixel Display;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -645,7 +645,7 @@
 
     h4 {
         color: #222;
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -655,7 +655,7 @@
 
     p {
         color: #222;
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -669,7 +669,7 @@
 
     a {
         color: var(--Mulled-Vine, #6C4B76);
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 13px;
         font-style: normal;
         font-weight: 500;
@@ -780,7 +780,7 @@
 
     span {
         color: #FFF;
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -898,7 +898,7 @@
 
             p {
                 color: #FFF;
-                font-family: Fixel;
+                font-family: Fixel Display;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -909,7 +909,7 @@
 
             a {
                 color: var(--White, #FFF);
-                font-family: Fixel;
+                font-family: Fixel Display;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -928,6 +928,7 @@
                     width: 18px;
                     height: 15px;
                     background-size: cover;
+                    margin-bottom: 3px;
                 }
 
                 &:hover {
@@ -1125,7 +1126,7 @@
     p,
     li {
         color: #C4C7C8;
-        font-family: Fixel;
+        font-family: Fixel Display;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
