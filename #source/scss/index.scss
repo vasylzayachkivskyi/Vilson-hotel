@@ -4,18 +4,8 @@
     height: 100vh;
     min-height: 800px;
     position: relative;
+    overflow: hidden;
 
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     z-index: 2;
-    //     left: 0;
-    //     top: 90px;
-    //     width: 100%;
-    //     height: 1px;
-    //     opacity: 0.25;
-    //     background-color: #D9D9D9;
-    // }
     &.heroapart {
         height: 716px;
         min-height: auto;
@@ -24,6 +14,7 @@
             height: 716px;
             min-height: auto;
         }
+
         .heroscreen__slider {
             height: 716px;
             min-height: auto;
@@ -40,19 +31,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 40px;
-
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     z-index: 1;
-    //     left: 0;
-    //     top: -91px;
-    //     width: 1px;
-    //     height: calc(100% + 91px);
-    //     opacity: 0.25;
-    //     background-color: #D9D9D9;
-    // }
 }
 
 
@@ -720,17 +698,6 @@
     justify-content: space-between;
     position: relative;
 
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     background-color: #373534;
-    //     opacity: 0.25;
-    //     height: 100%;
-    //     width: 1px;
-    //     top: 0;
-    //     left: 0;
-    // }
-
     h2 {
         max-width: 530px;
         width: 100%;
@@ -752,17 +719,6 @@
     justify-content: space-between;
     padding: 18px 0 18px 78px;
     position: relative;
-
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     background-color: #373534;
-    //     opacity: 0.25;
-    //     height: 100%;
-    //     width: 1px;
-    //     top: 0;
-    //     left: 0;
-    // }
 }
 
 .contact__info-col {
@@ -829,20 +785,6 @@
 .services__section {
     padding: 120px 0 96px;
     position: relative;
-
-    // .asside-line {
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-
-    //     .container {
-    //         height: 100%;
-    //         border-left: 1px solid rgba(255, 255, 255, 0.50);
-    //         opacity: 0.25;
-    //     }
-    // }
 
     .services__topwrap {
         position: relative;
@@ -980,10 +922,11 @@
             flex-direction: row-reverse;
             padding-right: 60px;
 
-            h2{
+            h2 {
                 text-align: right;
                 color: #373534;
             }
+
             p {
                 color: #373534;
             }
@@ -996,14 +939,6 @@
                 }
             }
         }
-
-        // .asside-line {
-
-        //     .container {
-        //         border-right: 1px solid #373534;
-        //         opacity: 0.25;
-        //     }
-        // }
     }
 
     &:last-child {
@@ -1297,6 +1232,7 @@
         max-width: 800px;
         margin-bottom: 30px;
     }
+
     .services__section:nth-child(2n) .services__top h2 {
         text-align: left;
     }
@@ -1528,6 +1464,7 @@
 }
 
 @media (max-width:767.8px) {
+
     .guest-dropdown {
         width: 100%;
         right: 0;
@@ -1661,11 +1598,33 @@
     .heroscreen__description p {
         font-size: 16px;
     }
+    .heroscreen.heroapart {
+
+        .heroscreen__frame {
+            bottom: -200px;
+        }
+    }
 
 
 }
 
 @media (max-width:575.8px) {
+
+    .heroscreen.heroapart {
+        height: 670px;
+
+        .heroscreen__frame {
+            bottom: -80px;
+        }
+    }
+
+    .heroscreen.heroapart .heroscreen__inner {
+        height: 670px;
+    }
+
+    .heroscreen.heroapart .heroscreen__slider {
+        height: 670px;
+    }
 
     .reservation__form .info-text,
     .reservation__form-datepicker label input,

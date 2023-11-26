@@ -452,7 +452,8 @@
     width: 100%;
     height: fit-content;
     padding: 20px 25px;
-    position: relative;
+    position: sticky;
+    top: 100px;
     z-index: 1;
     background-color: #fff;
 

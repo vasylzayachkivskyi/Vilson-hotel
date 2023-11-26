@@ -3,6 +3,7 @@
 
     &.dark {
         background: var(--Viol-Black, #222022);
+
         .servsect__content {
             margin-top: 100px;
             padding: 110px 0 155px;
@@ -12,6 +13,9 @@
             max-width: 620px;
 
             h2,
+            h3,
+            h4,
+            h5,
             p,
             a {
                 color: #fff;
@@ -181,7 +185,7 @@
 }
 
 .servtypes__tabs {
-    padding-left: 154px;
+    padding-left: 100px;
     position: relative;
     z-index: 1;
 
@@ -233,13 +237,85 @@
 
 //  ADAPTIVE ---------------- //
 
+@media (max-width: 1599.8px) {
+    .servtypes__image {
+        height: 540px;
+    }
+
+    .servtypes__tabs {
+        padding-left: 70px;
+    }
+}
+
 @media (max-width: 1399.8px) {
     .servsect__content-inner h2 {
         font-size: 40px;
     }
+
+    .servtypes__tabs .tab+.tab {
+        margin-top: 30px;
+    }
+
+    .servtypes__tabs .tab {
+        font-size: 28px;
+    }
+
+    .servtypes__tabs {
+        padding-left: 50px;
+    }
+
+    .servtypes__tabs .tab:before {
+        width: 35px;
+        height: 32px;
+    }
+
+    .servtypes__image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .servtypes__image {
+        height: 430px;
+    }
+
+    .servtypes__content {
+        width: 52%;
+    }
+
+    .servtypes__tabs .tab:before {
+        width: 30px;
+        height: 28px;
+        margin-right: 10px;
+    }
+
+    .servtypes__tabs .tab {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 991.8px) {
+    .servtypes__tabs {
+        padding-right: 10px;
+        padding-left: 40px;
+    }
+
+    .servtypes__tabs .tab {
+        font-size: 22px;
+    }
+
+    .servtypes__tabs .tab:before {
+        display: none;
+    }
+
+    .servtypes__content {
+        width: 55%;
+    }
+
+    .servtypes__image {
+        height: 350px;
+    }
+
     .servsect__row-item {
         width: 80px;
         height: 80px;
@@ -248,10 +324,15 @@
             width: 45px;
             height: 45px;
         }
-
     }
 
-    .servsect__content-inner h2 {
+    .servsect__row-item {
+        margin-right: 60px;
+    }
+
+    .servsect__content-inner h2,
+    .servsect__content-inner h3,
+    .servsect__content-inner h4 {
         font-size: 32px;
     }
 
@@ -259,31 +340,93 @@
         padding: 70px 0 50px;
     }
 
+    .servsect.dark .servsect__content {
+        padding: 80px 0 100px;
+    }
+
     .servsect__frame {
         width: 65%;
+    }
+
+    .servsect__content-inner {
+        padding-left: 40px;
     }
 }
 
 @media (max-width: 767.8px) {
+    .servsect__content-inner {
+        padding-left: 30px;
+    }
+
+    .servtypes {
+        flex-wrap: wrap;
+        padding: 70px 0;
+    }
+
+    .servtypes__content {
+        width: 100%;
+        order: 2;
+    }
+
+    .servtypes__tabs {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 25px 25px 25px;
+    }
+
+    .servtypes__tabs .tab {
+        margin-bottom: 20px;
+        font-size: 20px;
+        width: 47%;
+    }
+
+    .servtypes__tabs .tab+.tab {
+        margin-top: 0px;
+    }
+
     .servsect__row-item {
-        margin-right: 40px;
+        margin-right: 30px;
     }
 
     .servsect__content-inner p+p {
         margin-top: 20px;
     }
 
-    .servsect__content-inner h2 {
+    .servsect__content-inner h2,
+    .servsect__content-inner h3,
+    .servsect__content-inner h4 {
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 575.8px) {
+    .servtypes__image {
+        height: 75vw;
+    }
+
+    .servtypes {
+        padding: 50px 0 60px;
+    }
+
+    .servtypes__tabs .tab {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .servtypes__tabs {
+        padding: 0px 15px 15px 15px;
+    }
+
     .servsect__content-inner {
         padding-left: 25px;
     }
 
-    .servsect__content-inner h2 {
+    .servsect__content-inner h2,
+    .servsect__content-inner h3,
+    .servsect__content-inner h4 {
         font-size: 28px;
     }
 
@@ -316,7 +459,9 @@
         justify-content: space-between;
     }
 
-    .servsect__content-inner h2 {
+    .servsect__content-inner h2,
+    .servsect__content-inner h3,
+    .servsect__content-inner h4 {
         font-size: 24px;
     }
 
