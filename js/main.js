@@ -286,6 +286,17 @@ $(document).ready(function () {
     });
 
 
+    // servtypes tabs
+    $('.servtypes__tabs .tab').on('click', function () {
+        var dataClass = $(this).attr('data-tab');
+        $('.servtypes__image').removeClass('show').hide();
+        $('.servtypes__tabs .tab').removeClass('active-tab');
+        $(this).addClass('active-tab');
+        $('.' + dataClass).addClass('show').fadeIn(300);
+        return false;
+    });
+
+
 });
 
 
