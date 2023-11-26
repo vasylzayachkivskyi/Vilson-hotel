@@ -1598,6 +1598,7 @@
     .heroscreen__description p {
         font-size: 16px;
     }
+
     .heroscreen.heroapart {
 
         .heroscreen__frame {
@@ -1609,6 +1610,13 @@
 }
 
 @media (max-width:575.8px) {
+    .events__inner.margleft {
+        margin-left: 0 !important;
+    }
+
+    .events__slider {
+        margin-left: 0px;
+    }
 
     .heroscreen.heroapart {
         height: 670px;
