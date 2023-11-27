@@ -39,8 +39,8 @@
             top: -5px;
             left: 0;
             width: 20px;
-            height: 26px;
-            background: no-repeat url(../img/svg/arrow-back-violet.svg);
+            height: 20px;
+            background: center/cover no-repeat url(../img/svg/arrow-back-violet.svg);
             transition: .3s;
         }
 
@@ -1038,6 +1038,7 @@
 }
 
 @media (max-width:575.8px) {
+
     .apartament__form{
         .qs-datepicker-container {
             transform: translateX(0%);
