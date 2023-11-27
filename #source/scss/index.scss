@@ -237,6 +237,7 @@
 //  events section --------------------- //
 .events {
     padding: 60px 0;
+    overflow: hidden;
 }
 
 .events__title {
@@ -338,6 +339,7 @@
 .reservation {
     padding: 100px 0 400px;
     position: relative;
+    overflow: hidden;
 }
 
 .reservation__title {
@@ -685,6 +687,7 @@
 
 .contact {
     position: relative;
+    overflow: hidden;
 }
 
 .contact__top {
@@ -782,6 +785,9 @@
 
 // services section ---------------- //
 
+.services{
+    overflow: hidden;
+}
 .services__section {
     padding: 120px 0 96px;
     position: relative;
@@ -974,6 +980,7 @@
     padding: 120px 0 238px;
     background-color: #222022;
     position: relative;
+    overflow: hidden;
 
     .faq__frame {
         position: absolute;

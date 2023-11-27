@@ -19,6 +19,10 @@
     }
 }
 
+.apartaments {
+    overflow: hidden;
+}
+
 .apartaments__section {
     position: relative;
 
@@ -495,7 +499,7 @@
         padding: 55px 0 50px;
     }
 
-    .apartaments__row-icon img{
+    .apartaments__row-icon img {
         width: 35px;
         height: 35px;
         margin-right: 10px;

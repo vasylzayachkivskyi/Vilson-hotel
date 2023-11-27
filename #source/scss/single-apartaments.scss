@@ -910,7 +910,9 @@
 
     .apartament__form {
         width: 100%;
+        position: relative;
         margin-bottom: 45px;
+        top: initial;
     }
 
     .apartament__form-box .reservation__form-guest {
