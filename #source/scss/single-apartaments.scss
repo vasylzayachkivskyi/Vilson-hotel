@@ -1009,6 +1009,20 @@
 }
 
 @media (max-width:767.8px) {
+    .apartament__form {
+        .qs-datepicker-container {
+            transform: translateX(0%);
+        }
+
+        .start-date .qs-datepicker-container {
+            left: 0 !important;
+        }
+
+        .end-date .qs-datepicker-container {
+            left: initial !important;
+            right: 0 !important;
+        }
+    }
     .apartament__widget-info {
         display: flex;
         align-items: center;
@@ -1042,21 +1056,6 @@
 }
 
 @media (max-width:575.8px) {
-
-    .apartament__form {
-        .qs-datepicker-container {
-            transform: translateX(0%);
-        }
-
-        .start-date .qs-datepicker-container {
-            left: 0 !important;
-        }
-
-        .end-date .qs-datepicker-container {
-            left: initial !important;
-            right: 0 !important;
-        }
-    }
 
     .apartament__gallery-left a {
         height: 50vw;
