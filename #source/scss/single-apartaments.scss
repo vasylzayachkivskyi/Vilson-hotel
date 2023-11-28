@@ -1173,7 +1173,6 @@
 
 
     .apartament__form-box .reservation__form-guest span {
-        // font-size: 12px;
         font-size: 16px;
     }
 
@@ -1182,25 +1181,17 @@
     }
 
     .apartament__form-box .reservation__form-guest input {
-        // font-size: 14px;
         font-size: 16px;
     }
 
-    .apartament__form-box .inputfield label span {
-        font-size: 12px;
-    }
 
-    .apartament__form-row p {
-        font-size: 14px;
-    }
+
 
     .apartament__form-row span {
         font-size: 14px;
     }
 
-    .apartament__form-box .additional-service li p {
-        font-size: 14px;
-    }
+
 
     .apartament__form-row .row-right input+span:after {
         width: 22px;
@@ -1223,8 +1214,8 @@
         height: 22px;
     }
 
-    .apartament__form-calculate li p {
-        font-size: 14px;
+    .apartament__form-row p {
+        font-size: 15px;
     }
 
     .apartament__form-calculate li.total {
@@ -1232,7 +1223,5 @@
         margin-bottom: 5px;
     }
 
-    .apartament__form-calculate li.total p {
-        font-size: 15px;
-    }
+
 }
