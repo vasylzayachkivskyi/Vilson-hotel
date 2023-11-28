@@ -407,24 +407,32 @@ body {
     .qs-datepicker-container {
         left: 0% !important;
         width: 100%;
-        padding: 0;
-        background: transparent;
-        box-shadow: none;
+        padding: 0px;
     }
 
     .qs-datepicker {
         width: 300px;
-        padding: 30px 25px;
+        padding: 35px 25px;
         margin: 0 auto;
         border-radius: 5px;
         border: none;
-        background: #FFF;
-        box-shadow: 0px 5.47899px 32.87395px 0px rgba(0, 0, 0, 0.2);
     }
 }
 
 
 @media (max-width:400px) {
+
+    .qs-datepicker {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .qs-squares {
+        width: 250px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
     .section-title {
         font-size: 24px;
 
@@ -436,5 +444,29 @@ body {
     .violet-btn {
         height: 52px;
         font-size: 14px;
+    }
+}
+
+@media (max-width:350px) {
+
+
+    .qs-square.qs-day {
+        font-size: 13px;
+    }
+    .qs-squares {
+        width: 230px;
+    }
+    .qs-square {
+        height: 31px;
+        width: 31px;
+    }
+
+    .qs-datepicker {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: none;
+        background: #FFF;
+        box-shadow: 0px 5.47899px 32.87395px 0px rgba(0, 0, 0, 0.2);
     }
 }
