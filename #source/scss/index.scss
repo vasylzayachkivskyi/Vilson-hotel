@@ -786,9 +786,10 @@
 
 // services section ---------------- //
 
-.services{
+.services {
     overflow: hidden;
 }
+
 .services__section {
     padding: 120px 0 96px;
     position: relative;
@@ -1276,15 +1277,11 @@
             margin: 20px 0 0 0;
         }
     }
-
-    // .heroscreen:before {
-    //     top: 86px;
-    // }
 }
 
 @media (max-width:991.8px) {
     .guest-dropdown {
-        transform: none;
+        transform: initial;
         left: initial;
         right: 0px;
     }
