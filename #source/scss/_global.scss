@@ -348,6 +348,17 @@ body {
     }
 }
 
+.qs-hidden {
+    display: block!important;
+    height: 0px!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+.qs-datepicker-container{
+    height: 330px;
+    transition: .6s;
+}
+
 //  -------------- *** ---------------- //
 //  ----------------------------------- //
 
