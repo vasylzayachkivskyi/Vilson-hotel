@@ -1470,6 +1470,9 @@
 }
 
 @media (max-width:767.8px) {
+    .reservation__form .info-text {
+        font-size: 16px;
+    }
 
     .reservation__form-datepicker label input,
     .reservation__form-guest label input {
