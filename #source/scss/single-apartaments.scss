@@ -542,24 +542,22 @@
     .end-date {
         width: 50%;
         padding: 14px 15px 15px;
-    }
-
-    span {
         color: #717171;
         font-family: Fixel Display;
-        // font-size: 14px;
-        font-size: 16px;
+        font-size: 14px;
+        // font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 100%;
         margin-bottom: 5px;
     }
 
+
     input {
         color: var(--Mulled-Vine, #6C4B76);
         font-family: Fixel Display;
-        // font-size: 14px;
-        font-size: 16px;
+        font-size: 14px;
+        // font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -1149,15 +1147,6 @@
         margin-bottom: 45px;
     }
 
-    .apartament__form-box {
-        .datepicker p {
-            font-size: 14px;
-        }
-
-        .datepicker span {
-            font-size: 12px;
-        }
-    }
 
     .apartament__form-box .reservation__form-guest span {
         font-size: 12px;
