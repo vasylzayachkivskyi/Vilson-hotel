@@ -544,12 +544,15 @@
         padding: 14px 15px 15px;
         color: #717171;
         font-family: Fixel Display;
-        // font-size: 14px;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 100%;
-        margin-bottom: 5px;
+
+        span {
+            margin-bottom: 5px;
+            display: block;
+        }
     }
 
 
@@ -588,11 +591,15 @@
     span {
         color: #717171;
         font-family: Fixel Display;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 100%;
         margin-bottom: 5px;
+        display: block;
+    }
+    .guest-dropdown__tip span{
+        font-size: 14px;
     }
 
     input {
@@ -622,8 +629,7 @@
             display: block;
             color: #717171;
             font-family: Fixel Display;
-            // font-size: 14px;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: 100%;
@@ -1010,6 +1016,20 @@
 }
 
 @media (max-width:767.8px) {
+
+    .datepicker .end-date,
+    .datepicker .start-date {
+        font-size: 16px;
+    }
+    
+
+    .apartament__form-box .reservation__form-guest span {
+        font-size: 16px;
+    }
+    .apartament__form-box .inputfield label span {
+        font-size: 16px;
+    }
+
     .apartament__form {
         .qs-datepicker-container {
             transform: translateX(0%);
@@ -1024,6 +1044,7 @@
             right: 0 !important;
         }
     }
+
     .apartament__widget-info {
         display: flex;
         align-items: center;
@@ -1152,6 +1173,7 @@
         // font-size: 12px;
         font-size: 16px;
     }
+
     .apartament__form-box .guest-dropdown__tip span {
         font-size: 16px;
     }

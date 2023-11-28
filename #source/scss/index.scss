@@ -418,7 +418,7 @@
     span {
         color: var(--Neutral-07, #717171);
         font-family: Fixel Display;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -498,8 +498,7 @@
             font-family: Fixel Display;
             font-weight: 400;
             color: var(--Neutral-07, #717171);
-            // font-size: 14px;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             line-height: normal;
             display: block;
@@ -1470,6 +1469,11 @@
 }
 
 @media (max-width:767.8px) {
+
+    .reservation__form-datepicker label input,
+    .reservation__form-guest label input {
+        font-size: 16px;
+    }
 
     .guest-dropdown {
         width: 100%;
