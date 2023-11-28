@@ -178,6 +178,7 @@ body {
         }
     }
 }
+
 //  -------------- *** ---------------- //
 
 
@@ -254,7 +255,7 @@ body {
     border-radius: 50%;
     height: 34px;
     width: 34px;
-    font-family: Fixel Display!important;
+    font-family: Fixel Display !important;
 
     &.qs-day {
         color: var(--light-primary, #333);
@@ -345,6 +346,7 @@ body {
         background: #BDAEC1;
     }
 }
+
 //  -------------- *** ---------------- //
 //  ----------------------------------- //
 
@@ -389,8 +391,9 @@ body {
 
 @media (max-width:767.8px) {
     .qs-datepicker-container {
-        left: 15%!important;
+        left: 15% !important;
     }
+
     .section-title {
         font-size: 28px;
 
@@ -402,10 +405,21 @@ body {
 
 @media (max-width:575.8px) {
     .qs-datepicker-container {
-        left: 50%!important;
-        transform: translateX(-50%);
+        left: 0% !important;
+        width: 100%;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .qs-datepicker {
         width: 300px;
         padding: 30px 25px;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: none;
+        background: #FFF;
+        box-shadow: 0px 5.47899px 32.87395px 0px rgba(0, 0, 0, 0.2);
     }
 }
 
