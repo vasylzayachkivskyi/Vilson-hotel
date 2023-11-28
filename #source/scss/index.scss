@@ -496,8 +496,8 @@
         input {
             border: none;
             font-family: Fixel Display;
-            font-weight: 400;
-            color: var(--Neutral-07, #717171);
+            font-weight: 600;
+            color: #6C4B76;
             font-size: 14px;
             font-style: normal;
             line-height: normal;
@@ -506,6 +506,7 @@
             padding: 0 40px;
 
             &::placeholder {
+                color:  #717171;
                 font-weight: 400;
                 font-size: 14px;
                 font-style: normal;
