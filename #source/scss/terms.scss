@@ -107,6 +107,7 @@
         font-weight: 400;
         line-height: 140%;
         transition: .3s;
+        text-transform: capitalize;
 
         &:hover {
             color: var(--Mulled-Vine, #6C4B76);
