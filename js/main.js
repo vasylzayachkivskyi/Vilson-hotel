@@ -199,7 +199,11 @@ $(document).ready(function () {
     // filtr btn -------------
     $('.reservation__form-btn').on('click', function (e) {
         e.preventDefault();
-        $('.reservation').toggleClass('active');
+        $('.search-loader').addClass('load');
+        setTimeout( function() {
+            $('.reservation').toggleClass('active');
+            $('.search-loader').removeClass('load');
+        },1000)
     });
 
     // datepicker -------------- // 
