@@ -479,15 +479,45 @@
         margin-bottom: 15px;
     }
 
-    >span {
-        color: #717171;
-        font-family: Fixel Display;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%;
+    .additional-info {
         text-align: center;
-        display: block;
+
+        span {
+            color: #717171;
+            font-family: Fixel Display;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+
+        p {
+            color: #222;
+            font-family: Fixel Display;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .info-free-rooms {
+            margin: 10px 0;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
     }
 }
 
