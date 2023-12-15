@@ -1,5 +1,7 @@
 .servsect {
     background-color: #fff;
+    position: relative;
+    overflow: hidden;
 
     &.dark {
         background: var(--Viol-Black, #222022);
@@ -28,14 +30,13 @@
     margin-top: 100px;
     padding: 0 0 70px;
     position: relative;
-    overflow: hidden;
 }
 .services__slider {
     margin-bottom: 100px;
 }
 
 .eventssect {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .servsect__frame {
@@ -161,6 +162,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -429,9 +431,7 @@
     .servtypes {
         padding: 50px 0 60px;
     }
-    .eventssect {
-        padding-bottom: 0px;
-    }
+
 
     .servtypes__tabs .tab {
         font-size: 18px;
