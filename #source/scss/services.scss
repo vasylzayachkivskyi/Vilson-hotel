@@ -25,13 +25,17 @@
 }
 
 .servsect__content {
-    padding: 100px 0 70px;
+    margin-top: 100px;
+    padding: 0 0 70px;
     position: relative;
     overflow: hidden;
 }
+.services__slider {
+    margin-bottom: 100px;
+}
 
 .eventssect {
-    padding-bottom: 90px;
+    padding-bottom: 40px;
 }
 
 .servsect__frame {
@@ -165,10 +169,6 @@
     position: relative;
 }
 
-.servtypes__tabs {
-    width: 45%;
-}
-
 
 .servtypes__image {
     width: 100%;
@@ -188,30 +188,35 @@
 
 .servtypes__tabs {
     padding-left: 100px;
+    padding-right: 12px;
     position: relative;
     z-index: 1;
+    width: 45%;
 
     .tab {
         color: rgba(255, 255, 255, 0.15);
         font-family: Prosto One;
-        font-size: 35px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
         text-transform: uppercase;
         transition: .3s;
         cursor: pointer;
+        padding-left: 66px;
+        position: relative;
 
         &:before {
             content: '';
-            display: inline-block;
-            vertical-align: middle;
+            position: absolute;
+            top: 50%;
+            left: 0;
             background-image: url(../img/svg/arrow-back-violet.svg);
             width: 46px;
             height: 38px;
             background-size: cover;
             margin-right: 20px;
-            transform: translateX(10px);
+            transform: translateY(-50%);
             transition: .3s;
             opacity: 0;
         }
@@ -225,7 +230,7 @@
             color: #FFF;
 
             &:before {
-                transform: translateX(0px);
+                left: -10px;
                 opacity: 1;
             }
         }
@@ -239,13 +244,21 @@
 
 //  ADAPTIVE ---------------- //
 
+@media (max-width: 1800px) {
+    .servtypes__tabs {
+        padding-left: 70px;
+    }
+}
 @media (max-width: 1599.8px) {
     .servtypes__image {
         height: 540px;
     }
 
     .servtypes__tabs {
-        padding-left: 70px;
+        padding-left: 50px;
+    }
+    .servtypes__tabs .tab {
+        font-size: 26px;
     }
 }
 
@@ -259,7 +272,7 @@
     }
 
     .servtypes__tabs .tab {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .servtypes__tabs {
@@ -288,12 +301,11 @@
     .servtypes__tabs .tab:before {
         width: 30px;
         height: 28px;
-        margin-right: 10px;
+    }
+    .servtypes__tabs .tab{
+        padding-left: 50px;
     }
 
-    .servtypes__tabs .tab {
-        font-size: 26px;
-    }
 }
 
 @media (max-width: 991.8px) {
@@ -303,7 +315,8 @@
     }
 
     .servtypes__tabs .tab {
-        font-size: 22px;
+        font-size: 20px;
+        padding-left: 0;
     }
 
     .servtypes__tabs .tab:before {
@@ -339,11 +352,16 @@
     }
 
     .servsect__content {
-        padding: 70px 0 50px;
+        margin-top: 70px;
+        padding: 0 0 50px;
+    }
+    .services__slider {
+        margin-bottom: 70px;
     }
 
     .servsect.dark .servsect__content {
         padding: 80px 0 100px;
+        margin-top: 0;
     }
 
     .servsect__frame {
@@ -381,7 +399,7 @@
     .servtypes__tabs .tab {
         margin-bottom: 20px;
         font-size: 20px;
-        width: 47%;
+        width: 100%;
     }
 
     .servtypes__tabs .tab+.tab {
@@ -411,6 +429,9 @@
     .servtypes {
         padding: 50px 0 60px;
     }
+    .eventssect {
+        padding-bottom: 0px;
+    }
 
     .servtypes__tabs .tab {
         font-size: 18px;
@@ -433,7 +454,11 @@
     }
 
     .servsect__content {
-        padding: 50px 0 40px;
+        padding: 0px 0 40px;
+        margin-top: 50px;
+    }
+    .services__slider {
+        margin-bottom: 50px;
     }
 
     .servsect__row-item {
