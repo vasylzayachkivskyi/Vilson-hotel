@@ -135,7 +135,80 @@ $(document).ready(function () {
         }
     });
 
+
+
+
+
+
     // guest counter ------------- 
+
+    // ----------------------- ADDITIONAL GUEST ------------------ //
+
+    $('.additional-guests__btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.additional-guests__box').slideToggle();
+    });
+
+    $('.additional-plus').each(function () {
+        $(this).on('click', function () {
+            const $parent = $(this).closest('.guest-dropdown__row');
+            const $counter = $parent.find('.counter-field');
+            const $plusButton = $(this);
+
+            const max = $parent.data('additional-guest');
+
+            let value = parseInt($counter.text(), 10);
+
+            if (value < max) {
+                value++;
+                updateCounter($counter, value);
+            }
+
+            if (value >= max) {
+                $plusButton.addClass('disabled');
+            }
+
+            $plusButton.siblings('.additional-minus').removeClass('disabled');
+
+            var additionalAdult = $('.additional-adult').find('.counter-field').text();
+            var additionalChild = $('.additional-child').find('.counter-field').text();
+            var additionalFreechild = $('.additional-freechild').find('.counter-field').text();
+
+            localStorage.setItem('additionalAdult', additionalAdult);
+            localStorage.setItem('additionalChild', additionalChild);
+            localStorage.setItem('additionalFree', additionalFreechild);
+        });
+    });
+
+    $('.additional-minus').each(function () {
+        $(this).on('click', function () {
+            const $parent = $(this).closest('.guest-dropdown__row');
+            const $counterField = $parent.find('.counter-field');
+            const $minusButton = $(this);
+            let value = parseInt($counterField.text(), 10);
+            if (value > 0) {
+                value--;
+                updateCounter($counterField, value);
+            }
+            if (value <= 0) {
+                $(this).addClass('disabled');
+            }
+
+            $minusButton.siblings('.additional-plus').removeClass('disabled');
+
+            var additionalAdult = $('.additional-adult').find('.counter-field').text();
+            var additionalChild = $('.additional-child').find('.counter-field').text();
+            var additionalFreechild = $('.additional-freechild').find('.counter-field').text();
+
+            localStorage.setItem('additionalAdult', additionalAdult);
+            localStorage.setItem('additionalChild', additionalChild);
+            localStorage.setItem('additionalFree', additionalFreechild);
+        });
+    });
+
+
+    //  -------------------------- //
+
 
     // Функція для зміни лічильника та тексту в input
     function updateCounter($counterField, value) {
@@ -200,10 +273,10 @@ $(document).ready(function () {
     $('.reservation__form-btn').on('click', function (e) {
         e.preventDefault();
         $('.search-loader').addClass('load');
-        setTimeout( function() {
+        setTimeout(function () {
             $('.reservation').toggleClass('active');
             $('.search-loader').removeClass('load');
-        },1000)
+        }, 1000)
     });
 
     // datepicker -------------- // 
@@ -331,32 +404,33 @@ $(document).ready(function () {
     // -----------
 
 
-        $(".terms__nav ul").on("click", "a", function (event) {
-            event.preventDefault();
-            var id = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('body,html').animate({ scrollTop: top - 105 }, 0);
-        });
+    $(".terms__nav ul").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top - 105 }, 0);
+    });
 
 
-        const links = document.querySelectorAll('.terms__nav li a');
-        window.addEventListener('scroll', () => {
-            const anchors = document.querySelectorAll('.terms__content [id]');
-            anchors.forEach(anchor => {
-                if (anchor.closest('.terms__content')) {
-                    const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;
-                    if (window.pageYOffset >= anchorTop - 110) {
-                        links.forEach(link => {
-                            const correspondingLink = document.querySelector(`.terms__nav li a[href="#${anchor.id}"]`);
-                            if (correspondingLink) {
-                                link.classList.remove('active');
-                                correspondingLink.classList.add('active');
-                            }
-                        });
-                    }
+    const links = document.querySelectorAll('.terms__nav li a');
+    window.addEventListener('scroll', () => {
+        const anchors = document.querySelectorAll('.terms__content [id]');
+        anchors.forEach(anchor => {
+            if (anchor.closest('.terms__content')) {
+                const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;
+                if (window.pageYOffset >= anchorTop - 110) {
+                    links.forEach(link => {
+                        const correspondingLink = document.querySelector(`.terms__nav li a[href="#${anchor.id}"]`);
+                        if (correspondingLink) {
+                            link.classList.remove('active');
+                            correspondingLink.classList.add('active');
+                        }
+                    });
                 }
-            });
+            }
         });
+    });
+
 
 
 });
